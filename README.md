@@ -1,2 +1,2 @@
 # ImageCompress
-图片压缩
+A compress application for PNG JPG GIF
