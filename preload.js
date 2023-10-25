@@ -53,7 +53,6 @@ contextBridge.exposeInMainWorld('electronAPI', {
     }
   },
   
-  //使用imagemin包
   compressImgByImagemin: async (input, output, opts) => {
     try{
       return await imagemin.compress(input, output, opts)
@@ -65,7 +64,6 @@ contextBridge.exposeInMainWorld('electronAPI', {
     }
   },
   
-  //使用exe文件
   compressImgByExe: (input, output, opts) => {
     try{
       const platform = os.platform()
