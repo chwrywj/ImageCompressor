@@ -32,7 +32,7 @@
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true
   },
-  "repository": "https://github.com/hbxftpwj/ImageCompress",
+  "repository": "https://github.com/chwrjwj/ImageCompress",
   "author": "wang jian",
   "license": "ISC",
   "dependencies": {
