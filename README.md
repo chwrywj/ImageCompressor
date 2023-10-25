@@ -3,6 +3,8 @@ ImageCompress is a desktop application that supports image compression in JPG, J
 
 Supports 25 languages including English, French, Spanish, German, Bulgarian, Czech, Danish, Greek, Estonian, Finnish, Hungarian, Italian, Japanese, Korean, Dutch, Polish, Portuguese, Romanian, Russian, Slovenian, Swedish, Thai, Vietnamese, Simplified Chinese, Traditional Chinese, etc.
 
+Developed with electron.
+
 Currently, only the Windows version is packaged:
 
 https://github.com/hbxftpwj/ImageCompress/releases
