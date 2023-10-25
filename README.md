@@ -6,7 +6,7 @@ Supports 25 languages including English, French, Spanish, German, Bulgarian, Cze
 Developed using Electron, image processing uses the imagemin plugin.
 
 # Releases
-Currently, only the Windows version is packaged:
+Currently, only the Windows version is packaged. If you need Mac and Linux versions, please package them yourself.
 
 https://github.com/chwrywj/ImageCompress/releases
 
