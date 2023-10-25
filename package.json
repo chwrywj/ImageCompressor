@@ -1,0 +1,48 @@
+{
+  "name": "image-compress",
+  "version": "1.0.0",
+  "description": "A compress application for PNG JPG GIF",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "build": {
+    "productName": "Image compress",
+    "asar": false,
+    "appId": "com.world0101.imgcompress",
+    "win": {
+      "icon": "./build/icons/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true,
+    "installerIcon": "./build/icons/icon.ico",
+    "uninstallerIcon": "./build/icons/icon.ico",
+    "installerHeaderIcon": "./build/icons/icon.ico",
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "repository": "https://github.com/hbxftpwj/ImageCompress",
+  "author": "wang jian",
+  "license": "ISC",
+  "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0"
+  },
+  "devDependencies": {
+    "electron": "^12.2.3",
+    "electron-builder": "^24.6.4"
+  }
+}

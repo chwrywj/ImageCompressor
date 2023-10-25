@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./lib/element-ui/index.css" rel="stylesheet">
+    <link href="./lib/font/iconfont.css" rel="stylesheet">
+    <style>
+        /*scollbar style*/
+        ::-webkit-scrollbar { width: 6px !important; height: 6px !important; }
+        ::-webkit-scrollbar-track-piece { background-color: var(--next-bg-main-color); }
+        ::-webkit-scrollbar-thumb {background-color: rgba(144, 147, 153, 0.4);background-clip: padding-box;min-height: 28px;border-radius: 5px;transition: 0.3s background-color;}
+        ::-webkit-scrollbar-thumb:hover {background-color: rgba(144, 147, 153, 0.6);cursor: pointer;}
+
+        [v-cloak] { display: none !important; }
+        *{box-sizing: border-box;}
+        body{margin: 0;padding:0; font-size:14px;}
+
+        .my-container{display: flex;flex-direction: column;width:100%;height: 100vh;border-top: 1px solid #d0d0d0;}
+        .my-container .main{display: flex;flex:1;height: 0;}
+        .my-container .main .left{flex:1;min-width:300px;padding: 10px;border-right: 1px solid #d0d0d0;background-color: #fff;display: flex;flex-direction: column;}
+        .my-container .main .left .add-file-cover{display: flex;flex-direction: column;align-items: center;margin-top:calc(50vh - 100px);font-size:14px;}
+        .my-container .main .left .add-file-cover .my-icon-up-img{color:#409EFF;font-size:70px;cursor: pointer;}
+        .my-container .main .left .add-file-cover .tip{margin:15px 0;}
+        .my-container .main .left .add-file-cover .add-filt-btn-box{display: flex;}
+        .my-container .main .left .add-file-cover .add-filt-btn-box .add-file-btn{width:180px;}
+        .my-container .main .left .table-top{padding-bottom:5px;}
+        .my-container .main .left .table-top .el-button{margin:0 12px 5px 0;}
+        .my-container .main .left .table-box{flex:1;height: 0;display: flex;border-radius: 6px;border: 1px solid #DCDFE6;overflow: hidden;}
+        .my-container .main .left .table-data-page{width:100%;padding-top: 10px;text-align: center;}
+
+        .setting{width:300px;min-width:300px;padding: 0 10px 10px 10px;background-color: #fff;display: flex;flex-direction: column;overflow: auto;}
+        .setting .collapse-title{font-weight: bold;}
+        .setting .el-collapse{border-top: 0;}
+        .setting .el-collapse-item:last-child .el-collapse-item__wrap{border-bottom: 0;}
+        .setting .el-collapse .el-collapse-item__content{padding-bottom:15px;}
+        .setting .item{display: flex;align-items: center;flex-direction: column;margin-bottom: 10px;}
+        .setting .item:last-child{margin-bottom: 0;}
+        .setting .item .label{width:100%;margin-bottom: 5px;}
+        .setting .item .label .el-icon-question{color:#777;}
+        .setting .item .content{width:100%;}
+        .setting .item .content.slider{padding: 0 10px;}
+        .setting .item .content.slider .el-slider__runway{margin:10px 0;}
+        .setting .item .content .el-input-group__append{padding:0 15px;}
+        .setting .item .content .open-folder{font-size:16px;cursor: pointer;}
+
+        .footer{border-top: 1px solid #d0d0d0;display: flex;justify-content: space-between;align-items: center;padding:10px;}
+        .footer .about{flex:1;display: flex;}
+        .footer .about .donate{margin-left:20px;}
+        .footer .progress{width:250px;margin-right: 10px;}
+        .footer .btn-compress{width:280px;}
+    </style>
+</head>
+<body>
+    <div id="body-container" class="my-container" v-cloak>
+        <div class="main">
+            <div class="left">
+                <template v-if="(imgData==null || imgData.length==0) && !tableLoading">
+                    <div class="add-file-cover">
+                        <i class="my-icon my-icon-up-img" @click="openFileDialog"></i>
+                        <div class="tip">{{lang('addFileTip')}}</div>
+                        <div class="add-filt-btn-box">
+                            <el-button type="primary" icon="el-icon-document-copy" class="add-file-btn" plain @click="openFileDialog">{{lang('addFileBtn')}}</el-button>
+                            <el-tooltip :content="lang('addDirTip')" placement="top">
+                                <el-button type="primary" icon="el-icon-folder" class="add-file-btn" plain @click="openDirectory('input')">{{lang('addDirBtn')}}</el-button>
+                            </el-tooltip>
+                        </div>
+                    </div>
+                </template>
+                <template v-else>
+                    <div class="table-top">
+                        <el-button type="primary" icon="el-icon-document-copy" size="mini" @click="openFileDialog" :disabled="compressIng">{{lang('addFileBtn')}}</el-button>
+                        <el-tooltip :content="lang('addDirTip')" placement="top">
+                            <el-button type="primary" icon="el-icon-folder" size="mini" @click="openDirectory('input')" :disabled="compressIng">{{lang('addDirBtn')}}</el-button>
+                        </el-tooltip>
+                        <el-button type="danger" icon="el-icon-delete" size="mini" @click="delImgData" :disabled="multipleSelection.length==0 || compressIng">{{lang('batchDelFile')}}</el-button>
+                        <el-button type="danger" icon="el-icon-delete" size="mini" @click="imgData=[]" :disabled="compressIng">{{lang('clearFile')}}</el-button>
+                    </div>
+                    <div class="table-box">
+                        <el-table
+                            v-loading="tableLoading"
+                            :data="imgPageData"
+                            size="mini"
+                            style="width: 100%;"
+                            height="100%"
+                            :header-cell-style="{backgroundColor:'#f5f7fa',color:'#606266'}"
+                            @selection-change="dataListMultiSelect">
+                            <el-table-column fixed="left" type="selection" min-width="55"></el-table-column>
+                            <el-table-column prop="sourceFilePath" :label="lang('sourceFilePath')" min-width="150px" show-overflow-tooltip>
+                                <template slot-scope="scope">
+                                    <div @click="openPath(scope.row.sourceFilePath)" style="cursor: pointer;">{{scope.row.sourceFilePath}}</div>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="newFilePath" :label="lang('newFilePath')" min-width="150px" show-overflow-tooltip>
+                                <template slot-scope="scope">
+                                    <div @click="openPath(scope.row.newFilePath)" style="cursor: pointer;">{{scope.row.newFilePath}}</div>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="sourceFileSize" :label="lang('sourceFileSize')" min-width="140px" align="right">
+                                <template slot-scope="scope">
+                                    {{(scope.row.sourceFileSize/1024).toFixed(2)+"KB"}}
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="newFileSize" :label="lang('newFileSize')" min-width="140px" align="right">
+                                <template slot-scope="scope">
+                                    {{scope.row.newFileSize!=null?(scope.row.newFileSize/1024).toFixed(2)+"KB":""}}
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="status" :label="lang('status')" width="140px" show-overflow-tooltip>
+                                <template slot-scope="scope">
+                                    <span v-html="showCompressStatus(scope.row.status)"></span>
+                                </template>
+                            </el-table-column>
+                        </el-table>
+                    </div>
+                    <div class="table-data-page">
+                        <el-pagination
+                            background
+                            layout="total, sizes, prev, pager, next"
+                            pager-count="5"
+                            :total="imgData.length"
+                            :page-sizes="[100, 200, 500]"
+                            :page-size="pageSize"
+                            :current-page="pageIndex"
+                            @current-change="pageIndexChange"
+                            @size-change="pageSizeChange">
+                        </el-pagination>
+                    </div>
+                </template>
+            </div>
+            <div class="setting">
+                <el-collapse v-model="settingCollapseActiveNames">
+                    <el-collapse-item name="1">
+                        <div slot="title" class="collapse-title">{{lang('jpgSetting')}}</div>
+                        <div class="item">
+                            <span class="label">
+                                <el-tooltip :content="lang('qualityTip')" placement="top">
+                                    <i class="el-icon-question"></i>
+                                </el-tooltip>
+                                {{lang('quality')}}
+                            </span>
+                            <el-slider class="content slider" v-model="compressOptions.jpg.quality" :disabled="compressIng" :min="0" :max="100"></el-slider>
+                        </div>
+                    </el-collapse-item>
+                    <el-collapse-item name="2">
+                        <div slot="title" class="collapse-title">{{lang('pngSetting')}}</div>
+                        <div class="item">
+                            <span class="label">
+                                <el-tooltip :content="lang('compressSpeedTip')" placement="top">
+                                    <i class="el-icon-question"></i>
+                                </el-tooltip>
+                                {{lang('compressSpeed')}}
+                            </span>
+                            <el-slider class="content slider" v-model="compressOptions.png.speed" :disabled="compressIng" :min="1" :max="11"></el-slider>
+                        </div>
+                        <div class="item">
+                            <span class="label">
+                                <el-tooltip :content="lang('qualityTip')" placement="top">
+                                    <i class="el-icon-question"></i>
+                                </el-tooltip>
+                                {{lang('quality')}}
+                            </span>
+                            <el-slider class="content slider" v-model="compressOptions.png.quality" range :min="0" :max="10" :disabled="compressIng"></el-slider>
+                        </div>
+                    </el-collapse-item>
+                    <el-collapse-item name="3">
+                        <div slot="title" class="collapse-title">{{lang('gifSetting')}}</div>
+                        <div class="item">
+                            <span class="label">
+                                <el-tooltip :content="lang('compressSpeedTip')" placement="top">
+                                    <i class="el-icon-question"></i>
+                                </el-tooltip>
+                                {{lang('optimizationLevel')}}
+                            </span>
+                            <el-slider class="content slider" v-model="compressOptions.gif.optimizationLevel" :disabled="compressIng" :min="1" :max="3"></el-slider>
+                        </div>
+                        <div class="item">
+                            <span class="label">
+                                <el-tooltip :content="lang('qualityTip')" placement="top">
+                                    <i class="el-icon-question"></i>
+                                </el-tooltip>
+                                {{lang('colors')}}
+                            </span>
+                            <el-slider class="content slider" v-model="compressOptions.gif.colors" :disabled="compressIng" :min="2" :max="256"></el-slider>
+                        </div>
+                    </el-collapse-item>
+                    <el-collapse-item name="4">
+                        <div slot="title" class="collapse-title">{{lang('otherSetting')}}</div>
+                        <div class="item">
+                            <span class="label">
+                                {{lang('outDir')}}
+                            </span>
+                            <el-select class="content" v-model="outputDirType" size="mini" :disabled="compressIng">
+                                <el-option :label="lang('sourceDir')" key="sourcePath" value="sourcePath"></el-option>
+                                <el-option :label="lang('customDir')" key="newPath" value="newPath"></el-option>
+                            </el-select>
+                        </div>
+                        <div class="item" v-if="outputDirType=='newPath'">
+                            <el-input class="content" v-model="outputPath" size="mini" :disabled="compressIng" @click="openDirectory('output')">
+                                <template slot="append">
+                                    <i class="open-folder el-icon-folder-opened" @click="openDirectory('output')"></i>
+                                </template>
+                            </el-input>
+                        </div>
+                    </el-collapse-item>
+                </el-collapse>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="about">
+                <div>{{lang('support')}}: <el-link type="primary" @click="openBrowser('https://www.world0101.com?from=ImageCompress')">{{lang('digitalWorld')}}(world0101.com)</el-link></div>
+                <div class="donate"><el-link type="primary" @click="openBrowser('https://www.world0101.com/Redirect?type=donate&from=ImageCompress')">{{lang('donata')}}</el-link></div>
+            </div>
+            <el-progress v-if="compressIng || imgCompressPercent!=0" class="progress" :text-inside="true" :stroke-width="26" :percentage="imgCompressPercent" text-color="#fff"></el-progress>
+            <el-button type="primary" class="btn-compress" @click="compressImg" :disabled="imgData==null || imgData.length==0 || imgCompressPercent==100">{{compressIng?lang('compressStop'):lang('compressStart')}}</el-button>
+        </div>
+    </div>
+
+    <script src="./lib/vue/vue.min.js"></script>
+    <script src="./lib/element-ui/index.js"></script>
+    <script src="./js/renderer.js"></script>
+    <script src="https://www.world0101.com/api/Statistics?from=ImageCompress&action=OpenImageCompress"></script>
+</body>
+</html>
