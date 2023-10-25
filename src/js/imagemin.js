@@ -1,20 +1,11 @@
-// "dependencies": {
-//     "imagemin": "^7.0.1",
-//     "imagemin-gifsicle": "^7.0.0",
-//     "imagemin-mozjpeg": "^8.0.0",
-//     "imagemin-pngquant": "^8.0.0",
-//     "imagemin-svgo": "^10.0.1",
-//     "imagemin-webp": "^8.0.0"
-// },
-
 const imagemin = require('imagemin');
-//有损
+//Lossy compression
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminPngquant = require('imagemin-pngquant');
 // const imageminGiflossy = require('imagemin-giflossy');
 // const imageminSvgo = require('imagemin-svgo');
 // const imageminWebp = require('imagemin-webp');
-//无损
+//Lossless compression
 // const imageminJpegtran = require('imagemin-jpegtran');
 // const imageminOptipng = require('imagemin-optipng');
 const imageminGifsicle = require('imagemin-gifsicle');
@@ -30,7 +21,7 @@ async function imageminCompress(input, output, opts) {
     if(opts.png.quality[0]>1){
         opts.png.quality=[opts.png.quality[0]/10, opts.png.quality[1]/10];
     }
-    return await imagemin([input], { //input+'/*.{jpg,png,gif}'
+    return await imagemin([input], {
         destination: output,
         plugins: [
             // imageminJpegtran(),

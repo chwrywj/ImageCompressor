@@ -16,15 +16,15 @@ new Vue({
             settingCollapseActiveNames: ['1','2','3','4'],
             compressOptions:{
                 jpg:{
-                    quality: 70 //0-100 值越大质量越好
+                    quality: 70 //0-100 The higher the value, the better the quality
                 },
                 png:{
-                    speed: 3, //1-11压缩速度，值越大，压缩速度越快，但质量会降低
-                    quality: [5, 8] //0-1 数字越大质量越好，这里放大10倍，给滑块使用，压缩函数那边会除以10
+                    speed: 3, //1-11 Compression speed, the higher the value, the faster the compression speed, but the quality will decrease
+                    quality: [5, 8] //0-1 The larger the number, the better the quality
                 },
                 gif:{
-                    optimizationLevel: 3, //1-3 数字越大质量越差，但处理速度越快
-                    colors: 70 //2-256 数字越大质量越高
+                    optimizationLevel: 3, //1-3 The larger the number, the worse the quality, but the faster the processing speed
+                    colors: 70 //2-256 The larger the number, the higher the quality
                 }
             },
             outputDirType:"sourcePath",
@@ -89,7 +89,6 @@ new Vue({
             this.tableLoading=true;
             if(filePaths!=null && filePaths.length>0){
                 this.tableLoading=true;
-                //延迟执行的作用是等待loading渲染到页面
                 setTimeout(()=>{
                     for(var i=0;i<filePaths.length;i++){
                         var filterData = this.imgData.filter(item => {
@@ -121,7 +120,6 @@ new Vue({
                 var fileData = window.electronAPI.getFilesFromDir(dirPaths,['.jpg','.jpeg','.png','.gif']);
                 if(fileData!=null && fileData.length>0){
                     this.tableLoading=true;
-                    //延迟执行的作用是等待loading渲染到页面
                     setTimeout(()=>{
                         for(var i=0;i<fileData.length;i++){
                             var filterData = this.imgData.filter(item => {
