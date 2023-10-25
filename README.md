@@ -7,7 +7,7 @@ Developed with electron.
 
 Currently, only the Windows version is packaged:
 
-https://github.com/hbxftpwj/ImageCompress/releases
+https://github.com/chwrywj/ImageCompress/releases
 
-![](https://github.com/hbxftpwj/ImageCompress/blob/main/image-compress-1.png)
-![](https://github.com/hbxftpwj/ImageCompress/blob/main/image-compress-2.png)
+![](https://github.com/chwrywj/ImageCompress/blob/main/image-compress-1.png)
+![](https://github.com/chwrywj/ImageCompress/blob/main/image-compress-2.png)
