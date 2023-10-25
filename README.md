@@ -5,6 +5,7 @@ Supports 25 languages including English, French, Spanish, German, Bulgarian, Cze
 
 Developed with electron.
 
+# Releases
 Currently, only the Windows version is packaged:
 
 https://github.com/chwrywj/ImageCompress/releases
@@ -12,6 +13,5 @@ https://github.com/chwrywj/ImageCompress/releases
 ![](https://github.com/chwrywj/ImageCompress/blob/main/image-compress-1.png)
 ![](https://github.com/chwrywj/ImageCompress/blob/main/image-compress-2.png)
 
-
-Related
+# Related
 [imagemin](https://github.com/imagemin/imagemin)
