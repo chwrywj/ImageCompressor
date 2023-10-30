@@ -43,7 +43,7 @@ new Vue({
             if(this.imgData.length==0)
                 return 0;
             var filterData = this.imgData.filter(item => {
-                return item.status != 0
+                return item.status == 2 || item.status == 3
             });
             return parseInt((filterData.length/this.imgData.length)*100,10);
         }
