@@ -1,5 +1,5 @@
 {
-	"title": "Stiskanje slik digitalnega sveta",
+	"title": "Digitalni svet: stiskanje slik",
 	"addFileTip": "Podpira formate JPG, JPEG, PNG, GIF",
 	"addFileBtn": "Dodaj datoteke",
 	"addDirBtn": "dodaj mape",
@@ -13,7 +13,7 @@
 	"status": "stanje",
 	"jpgSetting": "Nastavitve stiskanja slik JPG",
 	"quality": "kakovost",
-	"qualityTip": "Višja kot je vrednost, boljša je kakovost slike, vendar se bo stopnja stiskanja zmanjšala",
+	"qualityTip": "Višja kot je vrednost, boljša je kakovost slike, vendar se bo hitrost stiskanja zmanjšala.",
 	"pngSetting": "Nastavitve stiskanja slik PNG",
 	"compressSpeed": "Hitrost stiskanja",
 	"compressSpeedTip": "Višja kot je vrednost, hitrejša je hitrost stiskanja, vendar se bo kakovost slike zmanjšala",

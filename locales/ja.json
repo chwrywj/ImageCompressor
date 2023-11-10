@@ -1,5 +1,5 @@
 {
-	"title": "デジタル世界画像圧縮",
+	"title": "デジタルワールド：画像圧縮",
 	"addFileTip": "JPG、JPEG、PNG、GIFフォーマットをサポートする",
 	"addFileBtn": "ファイルを追加",
 	"addDirBtn": "フォルダを追加",
@@ -25,7 +25,7 @@
 	"sourceDir": "元のファイルディレクトリ（元のファイルを上書き）",
 	"customDir": "カスタムディレクトリ",
 	"compressStart": "圧縮開始",
-	"compressStop": "圧縮を停止",
+	"compressStop": "圧縮の停止",
 	"support": "サポート",
 	"digitalWorld": "デジタルワールド",
 	"donata": "寄付する",
