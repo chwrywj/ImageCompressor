@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Lumea digitală: asistent de procesare a imaginilor",
+
+    "imageCompress": "Comprimare imagine",
+    "imageFormatConversion": "Conversia formatului imaginii",
+    "imageAddWatermark": "Adaugă filigrană",
+    "language": "limba",
+    "support": "asistență tehnică",
+    "donata": "donație",
+
+    "addFileTip": "Formate acceptate:",
+    "addImageBtn": "Adaugă imagine",
+    "addDirBtn": "adaugă dosare",
+    "addDirTip": "Va găsi toate fișierele de imagine în folderul selectat și subfolderele selectate",
+    "clearFile": "gol",
+
+    "sourcePath": "Calea originală",
+    "sourceSize": "Dimensiunea originală",
+    "sourceResolution": "Rezoluția inițială",
+    "newPath": "Cale nouă",
+    "newSize": "Dimensiune nouă",
+    "newResolution": "Rezoluție nouă",
+    "status": "starea",
+
+    "taskThreadsNumber": "Număr de fire de activități",
+    "taskThreadsNumberTip": "Cu cât numărul de fire de sarcini este mai mare, cu atât se consumă mai multă CUP și memorie.",
+    "imageResolution": "Rezoluția imaginii",
+    "useSourceResolution": "Utilizează rezoluția sursei",
+    "customMaxResolution": "Rezoluție maximă personalizată",
+    "proportionResolution": "Proporțional",
+    "proportionForResolution": "Raport de rezoluție",
+    "width": "lățime",
+    "height": "înălțime",
+    "maxWidth": "Lățimea maximă",
+    "maxHeight": "Înălțimea maximă",
+    "customResolutionTip1": "Când nu este setată, se va utiliza rezoluția sursă.",
+    "customResolutionTip2": "Dacă este setată numai lățimea sau înălțimea, cealaltă valoare va fi calculată automat pe baza raportului dintre rezoluția imaginii și alți factori.",
+    "customResolutionTip3": "Dacă lățimea și înălțimea inițială a imaginii sunt mai mici decât lățimea și înălțimea setată, se va utiliza rezoluția inițială a imaginii.",
+    "customResolutionTip4": "Dacă lățimea și înălțimea inițială a imaginii sunt mai mari decât lățimea și înălțimea setată, imaginea va fi redusă proporțional.",
+    "customResolutionRequired": "Introduceți rezoluția imaginii",
+    "mustBeInt": "Trebuie să fie un număr întreg",
+    "outDir": "Dosar de ieșire imagine",
+    "selectOutputDirTip": "Selectați directorul de ieșire",
+    "inputTip": "Vă rugăm să introduceți",
+    "selectTip": "Vă rugăm să selectați",
+
+    "tip": "prompt",
+    "ok": "confirma",
+    "cancel": "anulează",
+    "systemError": "Eroare de program"
+  },
+
+  "imageCompress": {
+    "tip": "Comprimare în serie imagini",
+
+    "compressSetting": "Configurări de compresie",
+    "quality": "Calitatea imaginii",
+    "qualityTip": "Cu cât valoarea este mai mare, cu atât calitatea imaginii este mai bună, dar cu atât raportul de compresie este mai mic",
+
+    "compressStart": "Începe comprimarea",
+    "compressStop": "Oprește compresia",
+
+    "unCompress": "De comprimat",
+    "compressIng": "În compresie",
+    "compressSuccess": "succes",
+    "compressFail": "eșec",
+    "compressOver": "Comprimare finalizată"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Convertește formatul imaginii în serie",
+
+    "sourceFormat": "Format original",
+    "newFormat": "Format țintă",
+
+    "convertSetting": "Configurări conversie",
+    "batchSetNewFormat": "Format țintă set loturi",
+    "convertStart": "Pornește conversia",
+    "convertStop": "Oprește conversia",
+    "newFormatNoSettingTip": "Vă rugăm să setați formatul țintă pentru toate imaginile",
+
+    "unConvert": "De convertit",
+    "convertIng": "Conversie",
+    "convertSuccess": "succes",
+    "convertFail": "eșec",
+    "convertOver": "finalizarea conversiei"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Filigrane pentru imagini setate loturi",
+
+    "processSetting": "Setări filigrane",
+    "watermarkType": "Tipul filigranului",
+    "image": "imagine",
+    "text": "caractere",
+    "imagePath": "Calea imaginii",
+    "imagePathTip": "Selectați o imagine filigrană",
+    "position": "poziție",
+    "positionCustom": "personalizat",
+    "positionLt": "Colțul din stânga sus",
+    "positionMt": "Partea superioară mijlocie",
+    "positionRt": "Colțul din dreapta sus",
+    "positionLm": "Mijloc stânga",
+    "positionM": "mijloc",
+    "positionRm": "Dreapta mijlocie",
+    "positionLb": "Colțul din stânga jos",
+    "positionMb": "Părți medii și inferioare",
+    "positionRb": "Colțul din dreapta jos",
+    "customPosition": "Coordonate de poziție personalizate",
+    "positionX": "x- coordonată",
+    "positionY": "Coordonate axa Y",
+    "textTip": "Introduceți textul",
+    "fontSize": "dimensiunea fontului",
+    "fontColor": "Culoarea fontului",
+    "fontBgColor": "Culoarea fundalului fontului",
+    "positionXy": "Coordonate de poziție",
+    "opacity": "Opacitate",
+    "opacityTip": "Cu cât valoarea este mai mare, cu atât transparența este mai mică",
+    "previewWatermark": "Filigranul previzualizat",
+    "previewDialogTitle": "Selectează imaginea de previzualizat",
+    "imageSelect": "imagine",
+    "preview": "previzualizare",
+    "processStart": "start",
+    "processStop": "încetează",
+
+    "unProcess": "Prelucrarea în așteptare",
+    "processIng": "Prelucrare",
+    "processSuccess": "succes",
+    "processFail": "eșec",
+    "processOver": "Prelucrarea finalizată",
+
+    "checkPositionTip": "Introduceți coordonatele filigranului text",
+    "checkPositionTip2": "Eroare de introducere a coordonatelor filigranului text",
+    "watermarkTip1": "Selectați o imagine filigrană",
+    "watermarkTip2": "Introduceți textul filigranului",
+    "customResolutionTip": "Eroare de intrare a rezoluției personalizate",
+    "previewLoadingTip": "Vă rugăm să așteptați, generăm imagini de previzualizare",
+    "settingDataValiErrTip": "Datele de setare a filigranelor sunt incomplete, vă rugăm să verificați"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Digitaalne maailm: pilditöötluse assistent",
+
+    "imageCompress": "Pildi tihendamine",
+    "imageFormatConversion": "Pildivormingu teisendamine",
+    "imageAddWatermark": "Vesimärgi lisamine",
+    "language": "keel",
+    "support": "tehniline tugi",
+    "donata": "annetus",
+
+    "addFileTip": "Toetatud vormingud:",
+    "addImageBtn": "Lisa pilt",
+    "addDirBtn": "lisa kataloogid",
+    "addDirTip": "Otsib valitud kataloogist ja alamkataloogist kõik pildifailid",
+    "clearFile": "tühi",
+
+    "sourcePath": "Algne asukoht",
+    "sourceSize": "Algne suurus",
+    "sourceResolution": "Algne eraldusvõime",
+    "newPath": "Uus asukoht",
+    "newSize": "Uus suurus",
+    "newResolution": "Uus resolutsioon",
+    "status": "olek",
+
+    "taskThreadsNumber": "Ülesandelõimede arv",
+    "taskThreadsNumberTip": "Mida suurem on ülesannete lõimede arv, seda rohkem kulub CUP ja mälu. Tavaliste arvutite puhul on soovitatav valida 1- 3",
+    "imageResolution": "Pildi eraldusvõime",
+    "useSourceResolution": "Allika resolutsiooni kasutamine",
+    "customMaxResolution": "Kohandatud maksimaalne eraldusvõime",
+    "proportionResolution": "Proportsionaalne",
+    "proportionForResolution": "Lahutusvõime määr",
+    "width": "laius",
+    "height": "kõrgus",
+    "maxWidth": "Maksimaalne laius",
+    "maxHeight": "Maksimaalne kõrgus",
+    "customResolutionTip1": "Kui pole määratud, kasutatakse allika eraldusvõimet.",
+    "customResolutionTip2": "Kui määratakse ainult laius või kõrgus, arvutatakse teine väärtus automaatselt pildi eraldusvõime ja muude tegurite suhte põhjal.",
+    "customResolutionTip3": "Kui pildi alglaius ja kõrgus on väiksemad kui määratud laius ja kõrgus, kasutatakse pildi algset eraldusvõimet.",
+    "customResolutionTip4": "Kui pildi alglaius ja kõrgus on suuremad kui määratud laius ja kõrgus, vähendatakse pilti proportsionaalselt.",
+    "customResolutionRequired": "Palun sisesta pildi resolutsioon",
+    "mustBeInt": "Peab olema täisarv",
+    "outDir": "Pildi väljundkataloog",
+    "selectOutputDirTip": "Palun vali väljundkataloog",
+    "inputTip": "Palun sisesta",
+    "selectTip": "Palun vali",
+
+    "tip": "viip",
+    "ok": "kinnita",
+    "cancel": "tühista",
+    "systemError": "Programmi viga"
+  },
+
+  "imageCompress": {
+    "tip": "Piltide pakkimine",
+
+    "compressSetting": "Pakkimise seadistused",
+    "quality": "Pildikvaliteet",
+    "qualityTip": "Mida suurem on väärtus, seda parem on pildikvaliteet, kuid seda väiksem on tihendussuhe.",
+
+    "compressStart": "Alusta tihendamist",
+    "compressStop": "Peata tihendamine",
+
+    "unCompress": "Pakitakse",
+    "compressIng": "Tihendamisel",
+    "compressSuccess": "edu",
+    "compressFail": "ebaõnnestub",
+    "compressOver": "Pakkimine lõpetatud"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Partii teisendamine pildi vormingus",
+
+    "sourceFormat": "Algne vorming",
+    "newFormat": "Sihtmärgi vorming",
+
+    "convertSetting": "Teisendamise seadistused",
+    "batchSetNewFormat": "Partii sihtvorming",
+    "convertStart": "Alusta teisendamist",
+    "convertStop": "Peata teisendamine",
+    "newFormatNoSettingTip": "Palun määra kõigi piltide sihtvorming",
+
+    "unConvert": "Muudetakse",
+    "convertIng": "Teisendamine",
+    "convertSuccess": "edu",
+    "convertFail": "ebaõnnestub",
+    "convertOver": "konverteerimise lõpetamine"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Partii määramine pildi vesimärgid",
+
+    "processSetting": "Vesimärgi seadistused",
+    "watermarkType": "Vesimärgi tüüp",
+    "image": "pilt",
+    "text": "märgid",
+    "imagePath": "Pildi asukoht",
+    "imagePathTip": "Palun vali vesimärgi pilt",
+    "position": "positsioon",
+    "positionCustom": "kohandatud",
+    "positionLt": "Ülemine vasak nurk",
+    "positionMt": "Keskmine ülaosa",
+    "positionRt": "Ülemine parem nurk",
+    "positionLm": "Vasak keskmine",
+    "positionM": "keskmine",
+    "positionRm": "Keskmine parem",
+    "positionLb": "Alumine vasak nurk",
+    "positionMb": "Keskmised ja alumised osad",
+    "positionRb": "Parem alumine nurk",
+    "customPosition": "Kohandatud asukohakoordinaadid",
+    "positionX": "x- koordinaat",
+    "positionY": "Y-telje koordinaadid",
+    "textTip": "Palun sisesta tekst",
+    "fontSize": "fondi suurus",
+    "fontColor": "Fondi värv",
+    "fontBgColor": "Fondi taustavärv",
+    "positionXy": "Asukohakoordinaadid",
+    "opacity": "Läbipaistmatus",
+    "opacityTip": "Mida suurem on väärtus, seda väiksem on läbipaistvus.",
+    "previewWatermark": "Vesimärgi eelvaatlus",
+    "previewDialogTitle": "Vali eelvaatlatav pilt",
+    "imageSelect": "pilt",
+    "preview": "eelvaatlus",
+    "processStart": "start",
+    "processStop": "lõpetada",
+
+    "unProcess": "Ootel töötlemine",
+    "processIng": "Töötlemine",
+    "processSuccess": "edu",
+    "processFail": "ebaõnnestub",
+    "processOver": "Töötlemine lõpetatud",
+
+    "checkPositionTip": "Palun sisesta teksti vesimärgi koordinaadid",
+    "checkPositionTip2": "Teksti vesimärgi koordinaatide sisestusviga",
+    "watermarkTip1": "Palun vali vesimärgi pilt",
+    "watermarkTip2": "Palun sisesta vesimärgi tekst",
+    "customResolutionTip": "Kohandatud resolutsiooni sisestusviga",
+    "previewLoadingTip": "Palun oodake, me genereerime eelvaatlusi",
+    "settingDataValiErrTip": "Vesimärgi seadistusandmed on ebatäielikud, palun kontrolli"
+  }
+}

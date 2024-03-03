@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "デジタルワールド：画像処理アシスタント",
+
+    "imageCompress": "画像圧縮",
+    "imageFormatConversion": "画像フォーマット変換",
+    "imageAddWatermark": "ウォーターマークを追加",
+    "language": "言語",
+    "support": "テクニカルサポート",
+    "donata": "寄付する",
+
+    "addFileTip": "サポート形式：",
+    "addImageBtn": "画像を追加",
+    "addDirBtn": "フォルダを追加",
+    "addDirTip": "選択したフォルダとサブフォルダ内のすべての画像ファイルが見つかります",
+    "clearFile": "クリアランス",
+
+    "sourcePath": "元のパス",
+    "sourceSize": "元のサイズ",
+    "sourceResolution": "元の解像度",
+    "newPath": "新しいパス",
+    "newSize": "新しいサイズ",
+    "newResolution": "新しい解像度",
+    "status": "ステータス",
+
+    "taskThreadsNumber": "タスクスレッド数",
+    "taskThreadsNumberTip": "タスクスレッド数が大きいほどCUPとメモリが消費されるため、一般的なコンピュータでは1～3を選択することを推奨しています",
+    "imageResolution": "画像の解像度",
+    "useSourceResolution": "ソース解像度の使用",
+    "customMaxResolution": "カスタム最大解像度",
+    "proportionResolution": "スケール＃スケール＃",
+    "proportionForResolution": "解像度スケール",
+    "width": "幅",
+    "height": "高さ",
+    "maxWidth": "最大幅",
+    "maxHeight": "最大高さ",
+    "customResolutionTip1": "設定しない場合はソース解像度が使用されます。",
+    "customResolutionTip2": "幅または高さだけを設定すると、別の値は画像解像度などの比率に基づいて自動的に計算されます。",
+    "customResolutionTip3": "画像の幅の高さが設定した幅の高さより小さい場合は、画像の元の解像度が使用されます。",
+    "customResolutionTip4": "画像の幅の高さが設定の幅の高さよりも大きいと、画像は縮小されます。",
+    "customResolutionRequired": "画像解像度を入力してください",
+    "mustBeInt": "整数でなければなりません",
+    "outDir": "画像出力ディレクトリ",
+    "selectOutputDirTip": "出力ディレクトリを選択してください",
+    "inputTip": "入力してください",
+    "selectTip": "選択してください",
+
+    "tip": "ヒント",
+    "ok": "を選択して、",
+    "cancel": "キャンセル",
+    "systemError": "プログラムエラー"
+  },
+
+  "imageCompress": {
+    "tip": "一括圧縮画像",
+
+    "compressSetting": "圧縮設定",
+    "quality": "画像の品質",
+    "qualityTip": "値が大きいほど画質は良くなりますが、圧縮率は小さくなります",
+
+    "compressStart": "圧縮開始",
+    "compressStop": "圧縮を停止",
+
+    "unCompress": "圧縮対象",
+    "compressIng": "圧縮中",
+    "compressSuccess": "成功",
+    "compressFail": "に失敗",
+    "compressOver": "圧縮完了"
+  },
+
+  "imageFormatConvert": {
+    "tip": "一括変換画像フォーマット",
+
+    "sourceFormat": "オリジナルフォーマット",
+    "newFormat": "ターゲットフォーマット",
+
+    "convertSetting": "変換設定",
+    "batchSetNewFormat": "一括ターゲットフォーマット",
+    "convertStart": "変換を開始",
+    "convertStop": "変換を停止",
+    "newFormatNoSettingTip": "すべての画像にターゲットフォーマットを設定してください",
+
+    "unConvert": "変換対象",
+    "convertIng": "変換中",
+    "convertSuccess": "成功",
+    "convertFail": "に失敗",
+    "convertOver": "変換完了"
+  },
+
+  "imageAddWatermark": {
+    "tip": "一括画像透かしの設定",
+
+    "processSetting": "ウォーターマークの設定",
+    "watermarkType": "ウォーターマークタイプ",
+    "image": "画像",
+    "text": "テキスト",
+    "imagePath": "画像パス",
+    "imagePathTip": "透かし画像を選択してください",
+    "position": "位置",
+    "positionCustom": "カスタム＃カスタム＃",
+    "positionLt": "左上",
+    "positionMt": "中央上部",
+    "positionRt": "右上",
+    "positionLm": "左中部",
+    "positionM": "中間",
+    "positionRm": "右中部",
+    "positionLb": "左下",
+    "positionMb": "中下部",
+    "positionRb": "右下",
+    "customPosition": "カスタム位置座標",
+    "positionX": "x軸座標",
+    "positionY": "y軸座標",
+    "textTip": "テキストを入力してください",
+    "fontSize": "フォントサイズ",
+    "fontColor": "フォント色",
+    "fontBgColor": "フォント背景色",
+    "positionXy": "位置座標",
+    "opacity": "不透明度ふとうめいど",
+    "opacityTip": "値が大きいほど透明度が低くなります",
+    "previewWatermark": "透かしのプレビュー",
+    "previewDialogTitle": "プレビューする画像を選択",
+    "imageSelect": "画像",
+    "preview": "プレビュー",
+    "processStart": "スタート",
+    "processStop": "ストップ",
+
+    "unProcess": "処理待ち",
+    "processIng": "処理中",
+    "processSuccess": "成功",
+    "processFail": "に失敗",
+    "processOver": "処理完了",
+
+    "checkPositionTip": "文字透かし座標を入力してください",
+    "checkPositionTip2": "文字透かし座標入力エラー",
+    "watermarkTip1": "透かし画像を選択してください",
+    "watermarkTip2": "透かし文字を入力してください",
+    "customResolutionTip": "カスタム解像度入力エラー",
+    "previewLoadingTip": "後で、プレビュー画像を生成してください",
+    "settingDataValiErrTip": "透かし設定データが不完全ですので、確認してください"
+  }
+}

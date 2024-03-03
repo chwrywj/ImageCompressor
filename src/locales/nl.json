@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Digitale wereld: Assistent voor beeldverwerking",
+
+    "imageCompress": "Beeldcompressie",
+    "imageFormatConversion": "Conversie van afbeeldingsformaat",
+    "imageAddWatermark": "Watermerk toevoegen",
+    "language": "taal",
+    "support": "technische ondersteuning",
+    "donata": "donatie",
+
+    "addFileTip": "Ondersteunde formaten:",
+    "addImageBtn": "Afbeelding toevoegen",
+    "addDirBtn": "mappen toevoegen",
+    "addDirTip": "Vindt alle afbeeldingsbestanden in de geselecteerde map en submappen",
+    "clearFile": "leeg",
+
+    "sourcePath": "Oorspronkelijk pad",
+    "sourceSize": "Oorspronkelijke grootte",
+    "sourceResolution": "Oorspronkelijke resolutie",
+    "newPath": "Nieuw pad",
+    "newSize": "Nieuwe grootte",
+    "newResolution": "Nieuwe resolutie",
+    "status": "staat",
+
+    "taskThreadsNumber": "Aantal taakdraden",
+    "taskThreadsNumberTip": "Hoe groter het aantal taakdraden, hoe meer CUP en geheugen worden verbruikt. Het wordt aanbevolen om 1-3 te kiezen voor reguliere computers",
+    "imageResolution": "Beeldresolutie",
+    "useSourceResolution": "Bronresolutie gebruiken",
+    "customMaxResolution": "Aangepaste maximale resolutie",
+    "proportionResolution": "Proportioneel",
+    "proportionForResolution": "Resolutieverhouding",
+    "width": "breedte",
+    "height": "hoogte",
+    "maxWidth": "Maximale breedte",
+    "maxHeight": "Maximale hoogte",
+    "customResolutionTip1": "Wanneer niet ingesteld, wordt de bronresolutie gebruikt.",
+    "customResolutionTip2": "Als alleen breedte of hoogte is ingesteld, wordt de andere waarde automatisch berekend op basis van de verhouding van de beeldresolutie en andere factoren.",
+    "customResolutionTip3": "Als de oorspronkelijke breedte en hoogte van de afbeelding kleiner zijn dan de ingestelde breedte en hoogte, wordt de oorspronkelijke resolutie van de afbeelding gebruikt.",
+    "customResolutionTip4": "Als de oorspronkelijke breedte en hoogte van de afbeelding groter zijn dan de ingestelde breedte en hoogte, wordt de afbeelding proportioneel verminderd.",
+    "customResolutionRequired": "Voer de beeldresolutie in",
+    "mustBeInt": "Moet een geheel getal zijn",
+    "outDir": "Afbeeldingsuitvoermap",
+    "selectOutputDirTip": "Selecteer de uitvoermap",
+    "inputTip": "Gelieve in te voeren",
+    "selectTip": "Selecteer",
+
+    "tip": "prompt",
+    "ok": "bevestigen",
+    "cancel": "annuleren",
+    "systemError": "Programmafout"
+  },
+
+  "imageCompress": {
+    "tip": "Afbeeldingen in batch comprimeren",
+
+    "compressSetting": "Compressie-instellingen",
+    "quality": "Beeldkwaliteit",
+    "qualityTip": "Hoe hoger de waarde, hoe beter de beeldkwaliteit, maar hoe lager de compressieverhouding",
+
+    "compressStart": "Comprimeren starten",
+    "compressStop": "Compressie stoppen",
+
+    "unCompress": "Te comprimeren",
+    "compressIng": "In compressie",
+    "compressSuccess": "succes",
+    "compressFail": "mislukken",
+    "compressOver": "Compressie voltooid"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Batch afbeeldingsindeling converteren",
+
+    "sourceFormat": "Origineel formaat",
+    "newFormat": "Doelformaat",
+
+    "convertSetting": "Conversie-instellingen",
+    "batchSetNewFormat": "Doelformaat batch instellen",
+    "convertStart": "Conversie starten",
+    "convertStop": "Conversie stoppen",
+    "newFormatNoSettingTip": "Stel het doelformaat in voor alle afbeeldingen",
+
+    "unConvert": "Te converteren",
+    "convertIng": "Omzetting",
+    "convertSuccess": "succes",
+    "convertFail": "mislukken",
+    "convertOver": "conversie voltooiing"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Batch beeldwatermerken instellen",
+
+    "processSetting": "Watermerkinstellingen",
+    "watermarkType": "Watermerktype",
+    "image": "foto",
+    "text": "karakters",
+    "imagePath": "Afbeeldingspad",
+    "imagePathTip": "Selecteer een watermerkafbeelding",
+    "position": "positie",
+    "positionCustom": "op maat",
+    "positionLt": "Linker bovenhoek",
+    "positionMt": "Midden bovendeel",
+    "positionRt": "Rechtsboven hoek",
+    "positionLm": "Links midden",
+    "positionM": "midden",
+    "positionRm": "Midden rechts",
+    "positionLb": "Linker benedenhoek",
+    "positionMb": "Midden- en onderste delen",
+    "positionRb": "Rechtsonder hoek",
+    "customPosition": "Aangepaste positiecoördinaten",
+    "positionX": "x-coördinaat",
+    "positionY": "Y-ascoördinaten",
+    "textTip": "Voer tekst in",
+    "fontSize": "lettergrootte",
+    "fontColor": "Lettertypekleur",
+    "fontBgColor": "Achtergrondkleur lettertype",
+    "positionXy": "Positiecoördinaten",
+    "opacity": "Ondoorzichtigheid",
+    "opacityTip": "Hoe hoger de waarde, hoe lager de transparantie",
+    "previewWatermark": "Voorbeeld van watermerk",
+    "previewDialogTitle": "Selecteer de afbeelding om een voorbeeld te bekijken",
+    "imageSelect": "foto",
+    "preview": "preview",
+    "processStart": "start",
+    "processStop": "stoppen",
+
+    "unProcess": "In afwachting van verwerking",
+    "processIng": "Verwerking",
+    "processSuccess": "succes",
+    "processFail": "mislukken",
+    "processOver": "Verwerking voltooid",
+
+    "checkPositionTip": "Voer de coördinaten van het tekstwatermerk in",
+    "checkPositionTip2": "Tekstwatermerkcoördinaat-invoerfout",
+    "watermarkTip1": "Selecteer een watermerkafbeelding",
+    "watermarkTip2": "Voer watermerktekst in",
+    "customResolutionTip": "Invoerfout van aangepaste resolutie",
+    "previewLoadingTip": "Wacht even, we genereren voorbeeldafbeeldingen",
+    "settingDataValiErrTip": "De gegevens over de instelling van het watermerk zijn onvolledig, controleer"
+  }
+}

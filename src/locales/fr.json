@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Monde numérique: assistant de traitement d'images",
+
+    "imageCompress": "Compression d'images",
+    "imageFormatConversion": "Conversion de format d'image",
+    "imageAddWatermark": "Ajouter un filigrane",
+    "language": "Langue",
+    "support": "Soutien technique",
+    "donata": "Donation",
+
+    "addFileTip": "Formats supportés:",
+    "addImageBtn": "Ajouter une image",
+    "addDirBtn": "Ajouter un dossier",
+    "addDirTip": "Découvrez tous les fichiers image dans les dossiers et sous - dossiers sélectionnés",
+    "clearFile": "Vider",
+
+    "sourcePath": "Le chemin original",
+    "sourceSize": "Taille originale",
+    "sourceResolution": "Résolution originale",
+    "newPath": "La nouvelle voie",
+    "newSize": "Nouvelle taille",
+    "newResolution": "Nouvelle résolution",
+    "status": "Statut",
+
+    "taskThreadsNumber": "Nombre de Threads de tâche",
+    "taskThreadsNumberTip": "Plus le nombre de Threads de tâche consomme de Cup et de mémoire, plus un ordinateur normal recommande de choisir 1 - 3",
+    "imageResolution": "Résolution de l'image",
+    "useSourceResolution": "Utiliser la résolution source",
+    "customMaxResolution": "Personnaliser la résolution maximale",
+    "proportionResolution": "Par proportion",
+    "proportionForResolution": "Proportion de résolution",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "maxWidth": "Largeur maximale",
+    "maxHeight": "Hauteur maximale",
+    "customResolutionTip1": "La résolution de la source est utilisée lorsqu'elle n'est pas définie.",
+    "customResolutionTip2": "Si vous définissez uniquement la largeur ou la hauteur, une autre valeur est automatiquement calculée en fonction de valeurs telles que la résolution de l'image.",
+    "customResolutionTip3": "Si la largeur d'origine de l'image est inférieure à la hauteur définie, la résolution d'origine de l'image est utilisée.",
+    "customResolutionTip4": "Si la largeur d'origine de l'image est supérieure à la hauteur définie, l'image sera réduite de manière égale.",
+    "customResolutionRequired": "Veuillez entrer la résolution de l'image",
+    "mustBeInt": "Doit être un nombre entier",
+    "outDir": "Catalogue de sortie d'images",
+    "selectOutputDirTip": "Veuillez sélectionner un répertoire de sortie",
+    "inputTip": "Veuillez entrer",
+    "selectTip": "Veuillez sélectionner",
+
+    "tip": "Conseils",
+    "ok": "Déterminer",
+    "cancel": "Annulation",
+    "systemError": "Erreur dans le programme"
+  },
+
+  "imageCompress": {
+    "tip": "Images compressées par lots",
+
+    "compressSetting": "Paramètres de compression",
+    "quality": "Qualité des images",
+    "qualityTip": "Plus la valeur est grande meilleure est la qualité de l'image, mais plus le taux de compression sera faible",
+
+    "compressStart": "Commencer la compression",
+    "compressStop": "Arrêter la compression",
+
+    "unCompress": "À compresser",
+    "compressIng": "En compression",
+    "compressSuccess": "Succès",
+    "compressFail": "L'échec",
+    "compressOver": "Compression terminée"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Convertir des formats d'image par lots",
+
+    "sourceFormat": "Format original",
+    "newFormat": "Format cible",
+
+    "convertSetting": "Paramètres de conversion",
+    "batchSetNewFormat": "Définir le format cible par lot",
+    "convertStart": "Commencer la conversion",
+    "convertStop": "Arrêter la conversion",
+    "newFormatNoSettingTip": "Veuillez définir un format cible pour toutes les images",
+
+    "unConvert": "À CONVERTIR",
+    "convertIng": "Dans la conversion",
+    "convertSuccess": "Succès",
+    "convertFail": "L'échec",
+    "convertOver": "Conversion terminée"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Lot Set Image Watermark",
+
+    "processSetting": "Paramètres de Watermark",
+    "watermarkType": "Type de Watermark",
+    "image": "Images",
+    "text": "Le texte",
+    "imagePath": "Chemin de l'image",
+    "imagePathTip": "Veuillez sélectionner une image filigrane",
+    "position": "Localisation",
+    "positionCustom": "Personnalisation",
+    "positionLt": "Coin supérieur gauche",
+    "positionMt": "Partie supérieure centrale",
+    "positionRt": "Coin supérieur droit",
+    "positionLm": "Centre gauche",
+    "positionM": "Au milieu",
+    "positionRm": "Centre droit",
+    "positionLb": "Coin inférieur gauche",
+    "positionMb": "Partie inférieure centrale",
+    "positionRb": "Coin inférieur droit",
+    "customPosition": "Coordonnées de localisation personnalisées",
+    "positionX": "Coordonnées de l'axe X",
+    "positionY": "Coordonnées de l'axe Y",
+    "textTip": "Veuillez entrer le texte",
+    "fontSize": "Taille de la police",
+    "fontColor": "Couleur de police",
+    "fontBgColor": "Couleur de fond de police",
+    "positionXy": "Coordonnées de localisation",
+    "opacity": "Opacité",
+    "opacityTip": "Plus la valeur est grande plus la transparence est faible",
+    "previewWatermark": "Aperçu Watermark",
+    "previewDialogTitle": "Sélectionnez les images à prévisualiser",
+    "imageSelect": "Images",
+    "preview": "Preview",
+    "processStart": "Commencer",
+    "processStop": "Arrêter",
+
+    "unProcess": "À traiter",
+    "processIng": "Dans le traitement",
+    "processSuccess": "Succès",
+    "processFail": "L'échec",
+    "processOver": "Traitement terminé",
+
+    "checkPositionTip": "Veuillez entrer les coordonnées du filigrane texte",
+    "checkPositionTip2": "Mot filigrane coordonnées entrée incorrecte",
+    "watermarkTip1": "Veuillez sélectionner une image filigrane",
+    "watermarkTip2": "Veuillez entrer le texte du filigrane",
+    "customResolutionTip": "Erreur d'entrée de résolution personnalisée",
+    "previewLoadingTip": "S'il vous plaît plus tard, une image d'aperçu est générée",
+    "settingDataValiErrTip": "Les données de configuration du filigrane sont incomplètes, veuillez vérifier"
+  }
+}

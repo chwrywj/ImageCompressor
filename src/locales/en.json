@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Digital World: Image Processing Assistant",
+
+    "imageCompress": "Image compression",
+    "imageFormatConversion": "Image format conversion",
+    "imageAddWatermark": "Add watermark",
+    "language": "Language",
+    "support": "Technical support",
+    "donata": "Donation",
+
+    "addFileTip": "Supported formats:",
+    "addImageBtn": "Add image",
+    "addDirBtn": "Add folders",
+    "addDirTip": "Will find all image files in the selected folder and sub folders",
+    "clearFile": "Clear",
+
+    "sourcePath": "Original path",
+    "sourceSize": "Original size",
+    "sourceResolution": "Original resolution",
+    "newPath": "New Path",
+    "newSize": "New size",
+    "newResolution": "New resolution",
+    "status": "State",
+
+    "taskThreadsNumber": "Number of task threads",
+    "taskThreadsNumberTip": "The larger the number of task threads, the more CUP and memory are consumed. It is recommended to choose 1-3 for regular computers",
+    "imageResolution": "Image resolution",
+    "useSourceResolution": "Use source resolution",
+    "customMaxResolution": "Custom maximum resolution",
+    "proportionResolution": "Proportional",
+    "proportionForResolution": "Resolution ratio",
+    "width": "Width",
+    "height": "Height",
+    "maxWidth": "Maximum width",
+    "maxHeight": "Maximum height",
+    "customResolutionTip1": "When not set, the source resolution will be used.",
+    "customResolutionTip2": "If only width or height is set, the other value will be automatically calculated based on the ratio of image resolution and other factors.",
+    "customResolutionTip3": "If the original width and height of the image are smaller than the set width and height, the original resolution of the image will be used.",
+    "customResolutionTip4": "If the original width and height of the image are greater than the set width and height, the image will be proportionally reduced.",
+    "customResolutionRequired": "Please enter the image resolution",
+    "mustBeInt": "Must be an integer",
+    "outDir": "Image output directory",
+    "selectOutputDirTip": "Please select the output directory",
+    "inputTip": "Please enter",
+    "selectTip": "Please select",
+
+    "tip": "Prompt",
+    "ok": "Confirm",
+    "cancel": "Cancel",
+    "systemError": "Program error"
+  },
+
+  "imageCompress": {
+    "tip": "Batch compress images",
+
+    "compressSetting": "Compression settings",
+    "quality": "Image quality",
+    "qualityTip": "The higher the value, the better the image quality, but the lower the compression ratio",
+
+    "compressStart": "Start compressing",
+    "compressStop": "Stop compression",
+
+    "unCompress": "To be compressed",
+    "compressIng": "In compression",
+    "compressSuccess": "Success",
+    "compressFail": "Fail",
+    "compressOver": "Compression completed"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Batch Convert Image Format",
+
+    "sourceFormat": "Original format",
+    "newFormat": "Target Format",
+
+    "convertSetting": "Conversion Settings",
+    "batchSetNewFormat": "Batch Set Target Format",
+    "convertStart": "Start conversion",
+    "convertStop": "Stop conversion",
+    "newFormatNoSettingTip": "Please set the target format for all images",
+
+    "unConvert": "To be converted",
+    "convertIng": "Converting",
+    "convertSuccess": "Success",
+    "convertFail": "Fail",
+    "convertOver": "Conversion completion"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Batch set image watermarks",
+
+    "processSetting": "Watermark settings",
+    "watermarkType": "Watermark type",
+    "image": "Picture",
+    "text": "Characters",
+    "imagePath": "Image path",
+    "imagePathTip": "Please select a watermark image",
+    "position": "Position",
+    "positionCustom": "Custom",
+    "positionLt": "Upper left corner",
+    "positionMt": "Middle upper part",
+    "positionRt": "Upper right corner",
+    "positionLm": "Left Middle",
+    "positionM": "Middle",
+    "positionRm": "Middle right",
+    "positionLb": "Lower left corner",
+    "positionMb": "Middle and lower parts",
+    "positionRb": "Lower right corner",
+    "customPosition": "Custom position coordinates",
+    "positionX": "X-coordinate",
+    "positionY": "Y-axis coordinates",
+    "textTip": "Please enter text",
+    "fontSize": "Font size",
+    "fontColor": "Font color",
+    "fontBgColor": "Font background color",
+    "positionXy": "Position coordinates",
+    "opacity": "Opacity",
+    "opacityTip": "The higher the value, the lower the transparency",
+    "previewWatermark": "Preview watermark",
+    "previewDialogTitle": "Select the image to preview",
+    "imageSelect": "Picture",
+    "preview": "Preview",
+    "processStart": "Start",
+    "processStop": "Cease",
+
+    "unProcess": "Pending processing",
+    "processIng": "Processing",
+    "processSuccess": "Success",
+    "processFail": "Fail",
+    "processOver": "Processing completed",
+
+    "checkPositionTip": "Please enter the text watermark coordinates",
+    "checkPositionTip2": "Text watermark coordinate input error",
+    "watermarkTip1": "Please select a watermark image",
+    "watermarkTip2": "Please enter watermark text",
+    "customResolutionTip": "Custom resolution input error",
+    "previewLoadingTip": "Please wait, we are generating preview images",
+    "settingDataValiErrTip": "The watermark setting data is incomplete, please check"
+  }
+}

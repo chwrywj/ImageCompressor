@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "โลกดิจิตอล: ผู้ช่วยประมวลผลภาพ",
+
+    "imageCompress": "การบีบอัดภาพ",
+    "imageFormatConversion": "การแปลงรูปแบบรูปภาพ",
+    "imageAddWatermark": "เพิ่มลายน้ำ",
+    "language": "ภาษา",
+    "support": "การสนับสนุนทางเทคนิค",
+    "donata": "การบริจาค",
+
+    "addFileTip": "รูปแบบการสนับสนุน:",
+    "addImageBtn": "เพิ่มรูปภาพ",
+    "addDirBtn": "เพิ่มโฟลเดอร์",
+    "addDirTip": "จะพบว่าไฟล์ภาพทั้งหมดภายในโฟลเดอร์ที่เลือกและโฟลเดอร์ย่อย",
+    "clearFile": "ล้าง",
+
+    "sourcePath": "เส้นทางเดิม",
+    "sourceSize": "ขนาดเดิม",
+    "sourceResolution": "ความละเอียดเดิม",
+    "newPath": "เส้นทางใหม่",
+    "newSize": "ขนาดใหม่",
+    "newResolution": "ความละเอียดใหม่",
+    "status": "สถานะ",
+
+    "taskThreadsNumber": "จำนวนเธรดงาน",
+    "taskThreadsNumberTip": "หัวข้องานที่ใหญ่กว่าใช้ CUP และหน่วยความจำมากขึ้นเครื่องคอมพิวเตอร์ทั่วไปแนะนำให้เลือก 1-3",
+    "imageResolution": "ความละเอียดของภาพ",
+    "useSourceResolution": "ใช้ความละเอียดของแหล่งที่มา",
+    "customMaxResolution": "ปรับแต่งความละเอียดสูงสุด",
+    "proportionResolution": "ตามสัดส่วน",
+    "proportionForResolution": "อัตราส่วนความละเอียด",
+    "width": "ความกว้าง",
+    "height": "ความสูง",
+    "maxWidth": "ความกว้างสูงสุด",
+    "maxHeight": "ความสูงสูงสุด",
+    "customResolutionTip1": "เมื่อไม่ตั้งจะใช้มติต้นทาง",
+    "customResolutionTip2": "หากตั้งค่าเฉพาะความกว้างหรือความสูง ค่าอื่นจะคํานวณโดยอัตโนมัติตามอัตราส่วนความละเอียดของภาพ ฯลฯ",
+    "customResolutionTip3": "หากภาพเดิมมีความกว้างสูงน้อยกว่าที่ตั้งไว้จะใช้ความละเอียดเดิมของภาพ",
+    "customResolutionTip4": "หากภาพเดิมมีความกว้าง-สูงมากกว่าความกว้าง-สูงที่ตั้งไว้จะทำให้ภาพลดลงในสัดส่วนที่เท่ากัน",
+    "customResolutionRequired": "โปรดป้อนความละเอียดของภาพ",
+    "mustBeInt": "ต้องเป็นจำนวนเต็ม",
+    "outDir": "แคตตาล็อกผลลัพธ์รูปภาพ",
+    "selectOutputDirTip": "โปรดเลือกไดเรกทอรีผลลัพธ์",
+    "inputTip": "กรุณากรอก",
+    "selectTip": "กรุณาเลือก",
+
+    "tip": "เคล็ดลับ",
+    "ok": "ระบุ",
+    "cancel": "การยกเลิก",
+    "systemError": "ข้อผิดพลาดของโปรแกรม"
+  },
+
+  "imageCompress": {
+    "tip": "รูปภาพการบีบอัดแบทช์",
+
+    "compressSetting": "การตั้งค่าการบีบอัด",
+    "quality": "คุณภาพของภาพ",
+    "qualityTip": "ค่าที่ใหญ่กว่าภาพที่มีคุณภาพดีกว่า แต่อัตราการบีบอัดจะน้อยลง",
+
+    "compressStart": "เริ่มการบีบอัด",
+    "compressStop": "หยุดการบีบอัด",
+
+    "unCompress": "เพื่อบีบอัด",
+    "compressIng": "ในการบีบอัด",
+    "compressSuccess": "ความสำเร็จ",
+    "compressFail": "ล้มเหลว",
+    "compressOver": "การบีบอัดเสร็จสมบูรณ์"
+  },
+
+  "imageFormatConvert": {
+    "tip": "แปลงรูปแบบรูปภาพเป็นชุด",
+
+    "sourceFormat": "รูปแบบดั้งเดิม",
+    "newFormat": "รูปแบบเป้าหมาย",
+
+    "convertSetting": "การตั้งค่าการแปลง",
+    "batchSetNewFormat": "ตั้งค่ารูปแบบเป้าหมายเป็นกลุ่ม",
+    "convertStart": "เริ่มการแปลง",
+    "convertStop": "หยุดการแปลง",
+    "newFormatNoSettingTip": "กรุณาตั้งค่ารูปแบบปลายทางสำหรับรูปภาพทั้งหมด",
+
+    "unConvert": "เพื่อแปลง",
+    "convertIng": "ในการแปลง",
+    "convertSuccess": "ความสำเร็จ",
+    "convertFail": "ล้มเหลว",
+    "convertOver": "การแปลงเสร็จสมบูรณ์"
+  },
+
+  "imageAddWatermark": {
+    "tip": "ตั้งค่าลายน้ำรูปภาพเป็นกลุ่ม",
+
+    "processSetting": "การตั้งค่าลายน้ำ",
+    "watermarkType": "ประเภทลายน้ำ",
+    "image": "รูปภาพ",
+    "text": "คำศัพท์",
+    "imagePath": "เส้นทางรูปภาพ",
+    "imagePathTip": "โปรดเลือกรูปภาพลายน้ำ",
+    "position": "สถานที่ตั้ง",
+    "positionCustom": "การปรับแต่ง",
+    "positionLt": "มุมบนซ้าย",
+    "positionMt": "ภาคกลางตอนบน",
+    "positionRt": "ด้านบนขวา",
+    "positionLm": "กลางซ้าย",
+    "positionM": "กลาง",
+    "positionRm": "กลางขวา",
+    "positionLb": "มุมซ้ายล่าง",
+    "positionMb": "ภาคกลางตอนล่าง",
+    "positionRb": "มุมล่างขวา",
+    "customPosition": "กำหนดพิกัดตำแหน่ง",
+    "positionX": "พิกัดแกน x",
+    "positionY": "พิกัดแกน y",
+    "textTip": "กรุณากรอกข้อความ",
+    "fontSize": "ขนาดตัวอักษร",
+    "fontColor": "สีตัวอักษร",
+    "fontBgColor": "สีพื้นหลังตัวอักษร",
+    "positionXy": "พิกัดตำแหน่ง",
+    "opacity": "ความทึบแสง",
+    "opacityTip": "มูลค่าที่มากขึ้น ความโปร่งใสต่ำ",
+    "previewWatermark": "ตัวอย่างลายน้ำ",
+    "previewDialogTitle": "เลือกรูปภาพที่คุณต้องการแสดงตัวอย่าง",
+    "imageSelect": "รูปภาพ",
+    "preview": "แสดงตัวอย่าง",
+    "processStart": "เริ่มต้นใช้งาน",
+    "processStop": "หยุด",
+
+    "unProcess": "เพื่อดำเนินการ",
+    "processIng": "ในการประมวลผล",
+    "processSuccess": "ความสำเร็จ",
+    "processFail": "ล้มเหลว",
+    "processOver": "การประมวลผลเสร็จสมบูรณ์",
+
+    "checkPositionTip": "โปรดป้อนพิกัดลายน้ำข้อความ",
+    "checkPositionTip2": "ข้อผิดพลาดในการป้อนพิกัดลายน้ำข้อความ",
+    "watermarkTip1": "โปรดเลือกรูปภาพลายน้ำ",
+    "watermarkTip2": "โปรดป้อนข้อความลายน้ำ",
+    "customResolutionTip": "ข้อผิดพลาดในการป้อนข้อมูลความละเอียดที่กำหนดเอง",
+    "previewLoadingTip": "โปรดสร้างภาพตัวอย่างในภายหลัง",
+    "settingDataValiErrTip": "ข้อมูลการตั้งค่าลายน้ำไม่สมบูรณ์โปรดตรวจสอบ"
+  }
+}

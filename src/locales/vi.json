@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Thế giới kỹ thuật số: Trợ lý xử lý hình ảnh",
+
+    "imageCompress": "Nén ảnh",
+    "imageFormatConversion": "Chuyển đổi định dạng ảnh",
+    "imageAddWatermark": "Thêm watermark",
+    "language": "Ngôn ngữ",
+    "support": "Hỗ trợ kỹ thuật",
+    "donata": "Đóng góp",
+
+    "addFileTip": "Định dạng hỗ trợ:",
+    "addImageBtn": "Thêm ảnh",
+    "addDirBtn": "Thêm thư mục",
+    "addDirTip": "Tìm thư mục đã chọn và tất cả các tập tin ảnh bên trong thư mục con",
+    "clearFile": "Trống rỗng",
+
+    "sourcePath": "Đường dẫn gốc",
+    "sourceSize": "Kích thước gốc",
+    "sourceResolution": "Độ phân giải gốc",
+    "newPath": "Đường dẫn mới",
+    "newSize": "Cỡ mới",
+    "newResolution": "Độ phân giải mới",
+    "status": "Trạng thái",
+
+    "taskThreadsNumber": "Số lượng task thread",
+    "taskThreadsNumberTip": "Số lượng chủ đề tác vụ càng lớn tiêu hao CUP và bộ nhớ càng nhiều, máy tính thông thường đề nghị chọn 1 - 3",
+    "imageResolution": "Độ phân giải ảnh",
+    "useSourceResolution": "Sử dụng độ phân giải nguồn",
+    "customMaxResolution": "Tùy chỉnh độ phân giải tối đa",
+    "proportionResolution": "Theo tỷ lệ",
+    "proportionForResolution": "Tỷ lệ độ phân giải",
+    "width": "Chiều rộng",
+    "height": "Chiều cao",
+    "maxWidth": "Chiều rộng tối đa",
+    "maxHeight": "Chiều cao tối đa",
+    "customResolutionTip1": "Độ phân giải nguồn được sử dụng khi không thiết lập.",
+    "customResolutionTip2": "Nếu chỉ đặt chiều rộng hoặc chiều cao, một giá trị khác sẽ được tính tự động dựa trên các giá trị như độ phân giải của hình ảnh.",
+    "customResolutionTip3": "Nếu chiều rộng vốn có của hình ảnh nhỏ hơn chiều rộng thiết lập, bạn sẽ sử dụng độ phân giải vốn có của hình ảnh.",
+    "customResolutionTip4": "Nếu hình ảnh vốn có chiều rộng lớn hơn chiều cao thiết lập sẽ thu nhỏ hình ảnh.",
+    "customResolutionRequired": "Vui lòng nhập độ phân giải ảnh",
+    "mustBeInt": "Phải là số nguyên",
+    "outDir": "Danh mục đầu ra ảnh",
+    "selectOutputDirTip": "Vui lòng chọn thư mục xuất",
+    "inputTip": "Vui lòng nhập",
+    "selectTip": "Vui lòng chọn",
+
+    "tip": "Mẹo",
+    "ok": "Xác định",
+    "cancel": "Hủy bỏ",
+    "systemError": "Chương trình bị lỗi"
+  },
+
+  "imageCompress": {
+    "tip": "Ảnh nén hàng loạt",
+
+    "compressSetting": "Thiết lập nén",
+    "quality": "Chất lượng hình ảnh",
+    "qualityTip": "Giá trị càng lớn thì chất lượng hình ảnh càng tốt, nhưng tốc độ nén sẽ càng nhỏ.",
+
+    "compressStart": "Bắt đầu nén",
+    "compressStop": "Dừng nén",
+
+    "unCompress": "Được nén",
+    "compressIng": "Đang nén",
+    "compressSuccess": "Thành công",
+    "compressFail": "Thất bại",
+    "compressOver": "Nén xong"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Chuyển đổi hàng loạt định dạng ảnh",
+
+    "sourceFormat": "Định dạng gốc",
+    "newFormat": "Định dạng đích",
+
+    "convertSetting": "Thiết lập chuyển đổi",
+    "batchSetNewFormat": "Định dạng đích hàng loạt",
+    "convertStart": "Bắt đầu chuyển đổi",
+    "convertStop": "Ngừng chuyển đổi",
+    "newFormatNoSettingTip": "Vui lòng định dạng mục tiêu cho tất cả ảnh",
+
+    "unConvert": "Chuyển đổi",
+    "convertIng": "Chuyển đổi",
+    "convertSuccess": "Thành công",
+    "convertFail": "Thất bại",
+    "convertOver": "Hoàn thành chuyển đổi"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Thiết lập hàng loạt ảnh watermark",
+
+    "processSetting": "Thiết lập watermark",
+    "watermarkType": "Loại Watermark",
+    "image": "Hình ảnh",
+    "text": "Văn bản",
+    "imagePath": "Đường dẫn ảnh",
+    "imagePathTip": "Vui lòng chọn hình ảnh watermark",
+    "position": "Địa điểm",
+    "positionCustom": "Tùy chỉnh",
+    "positionLt": "Trái trên",
+    "positionMt": "Trung thượng",
+    "positionRt": "Phải trên",
+    "positionLm": "Trái giữa",
+    "positionM": "Giữa",
+    "positionRm": "Giữa phải",
+    "positionLb": "Dưới trái",
+    "positionMb": "Trung hạ",
+    "positionRb": "Dưới phải",
+    "customPosition": "Tuỳ chỉnh tọa độ vị trí",
+    "positionX": "Tọa độ trục x",
+    "positionY": "Tọa độ trục y",
+    "textTip": "Vui lòng nhập văn bản",
+    "fontSize": "Cỡ phông chữ",
+    "fontColor": "Màu phông",
+    "fontBgColor": "Màu nền phông chữ",
+    "positionXy": "Tọa độ vị trí",
+    "opacity": "Độ mờ",
+    "opacityTip": "Giá trị càng lớn, độ trong suốt càng thấp.",
+    "previewWatermark": "Xem trước watermark",
+    "previewDialogTitle": "Chọn ảnh cần xem thử",
+    "imageSelect": "Hình ảnh",
+    "preview": "Xem thử",
+    "processStart": "Bắt đầu",
+    "processStop": "Dừng lại.",
+
+    "unProcess": "Đang xử lý",
+    "processIng": "Đang xử lý",
+    "processSuccess": "Thành công",
+    "processFail": "Thất bại",
+    "processOver": "Xử lý xong",
+
+    "checkPositionTip": "Vui lòng nhập tọa độ thủy ấn văn bản",
+    "checkPositionTip2": "Nhập sai tọa độ hình mờ văn bản",
+    "watermarkTip1": "Vui lòng chọn hình ảnh watermark",
+    "watermarkTip2": "Vui lòng nhập chữ watermark",
+    "customResolutionTip": "Lỗi nhập độ phân giải tùy chỉnh",
+    "previewLoadingTip": "Vui lòng tạo ảnh xem trước sau",
+    "settingDataValiErrTip": "Dữ liệu thiết lập watermark không đầy đủ, vui lòng kiểm tra"
+  }
+}

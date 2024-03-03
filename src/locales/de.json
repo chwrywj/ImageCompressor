@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Digitale Welt: Bildverarbeitungsassistent",
+
+    "imageCompress": "Bildkomprimierung",
+    "imageFormatConversion": "Konvertierung des Bildformats",
+    "imageAddWatermark": "Wasserzeichen hinzufügen",
+    "language": "Sprache",
+    "support": "technische Unterstützung",
+    "donata": "Spende",
+
+    "addFileTip": "Unterstützte Formate:",
+    "addImageBtn": "Bild hinzufügen",
+    "addDirBtn": "Ordner hinzufügen",
+    "addDirTip": "Findet alle Bilddateien im ausgewählten Ordner und Unterordner",
+    "clearFile": "leer",
+
+    "sourcePath": "Ursprünglicher Pfad",
+    "sourceSize": "Originalgröße",
+    "sourceResolution": "Originalauflösung",
+    "newPath": "Neuer Pfad",
+    "newSize": "Neue Größe",
+    "newResolution": "Neue Entschließung",
+    "status": "Zustand",
+
+    "taskThreadsNumber": "Anzahl der Task Threads",
+    "taskThreadsNumberTip": "Je größer die Anzahl der Task Threads, desto mehr CUP und Arbeitsspeicher werden verbraucht.",
+    "imageResolution": "Bildauflösung",
+    "useSourceResolution": "Quellauflösung verwenden",
+    "customMaxResolution": "Benutzerdefinierte maximale Auflösung",
+    "proportionResolution": "Proportional",
+    "proportionForResolution": "Auflösungsverhältnis",
+    "width": "Breite",
+    "height": "Höhe",
+    "maxWidth": "Maximale Breite",
+    "maxHeight": "Maximale Höhe",
+    "customResolutionTip1": "Wenn nicht gesetzt, wird die Quellauflösung verwendet.",
+    "customResolutionTip2": "Wenn nur Breite oder Höhe eingestellt ist, wird der andere Wert automatisch basierend auf dem Verhältnis der Bildauflösung und anderen Faktoren berechnet.",
+    "customResolutionTip3": "Wenn die ursprüngliche Breite und Höhe des Bildes kleiner als die eingestellte Breite und Höhe sind, wird die ursprüngliche Auflösung des Bildes verwendet.",
+    "customResolutionTip4": "Wenn die ursprüngliche Breite und Höhe des Bildes größer als die eingestellte Breite und Höhe sind, wird das Bild proportional reduziert.",
+    "customResolutionRequired": "Bitte geben Sie die Bildauflösung ein",
+    "mustBeInt": "Muss eine ganze Zahl sein",
+    "outDir": "Bildausgabeverzeichnis",
+    "selectOutputDirTip": "Bitte wählen Sie das Ausgabeverzeichnis aus",
+    "inputTip": "Bitte geben Sie ein",
+    "selectTip": "Bitte wählen",
+
+    "tip": "prompt",
+    "ok": "bestätigen",
+    "cancel": "Abbrechen",
+    "systemError": "Programmfehler"
+  },
+
+  "imageCompress": {
+    "tip": "Stapelkomprimierung von Bildern",
+
+    "compressSetting": "Komprimierungseinstellungen",
+    "quality": "Bildqualität",
+    "qualityTip": "Je höher der Wert, desto besser die Bildqualität, aber desto geringer das Komprimierungsverhältnis",
+
+    "compressStart": "Komprimieren beginnen",
+    "compressStop": "Kompression stoppen",
+
+    "unCompress": "Zu komprimieren",
+    "compressIng": "In Kompression",
+    "compressSuccess": "Erfolg",
+    "compressFail": "fehlschlagen",
+    "compressOver": "Kompression abgeschlossen"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Stapelkonvertierung des Bildformats",
+
+    "sourceFormat": "Originalformat",
+    "newFormat": "Zielformat",
+
+    "convertSetting": "Konvertierungseinstellungen",
+    "batchSetNewFormat": "Stapel-Zielformat festlegen",
+    "convertStart": "Konvertierung starten",
+    "convertStop": "Konvertierung stoppen",
+    "newFormatNoSettingTip": "Bitte legen Sie das Zielformat für alle Bilder fest",
+
+    "unConvert": "Zu konvertieren",
+    "convertIng": "Umwandlung",
+    "convertSuccess": "Erfolg",
+    "convertFail": "fehlschlagen",
+    "convertOver": "Umwandlung abgeschlossen"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Bildwasserzeichen im Stapel setzen",
+
+    "processSetting": "Wasserzeicheneinstellungen",
+    "watermarkType": "Wasserzeichentyp",
+    "image": "Bild",
+    "text": "Zeichen",
+    "imagePath": "Bildpfad",
+    "imagePathTip": "Bitte wählen Sie ein Wasserzeichenbild",
+    "position": "Position",
+    "positionCustom": "kundenspezifisch",
+    "positionLt": "Linke obere Ecke",
+    "positionMt": "Mittlerer oberer Teil",
+    "positionRt": "Rechte obere Ecke",
+    "positionLm": "Links Mitte",
+    "positionM": "Mitte",
+    "positionRm": "Mitte rechts",
+    "positionLb": "Linke untere Ecke",
+    "positionMb": "Mittel- und Unterteile",
+    "positionRb": "Rechte untere Ecke",
+    "customPosition": "Benutzerdefinierte Positionskoordinaten",
+    "positionX": "x-Koordinate",
+    "positionY": "Koordinaten der Y-Achse",
+    "textTip": "Bitte Text eingeben",
+    "fontSize": "Schriftgröße",
+    "fontColor": "Schriftfarbe",
+    "fontBgColor": "Schrifthintergrundfarbe",
+    "positionXy": "Positionskoordinaten",
+    "opacity": "Deckkraft",
+    "opacityTip": "Je höher der Wert, desto geringer die Transparenz",
+    "previewWatermark": "Wasserzeichen in der Vorschau anzeigen",
+    "previewDialogTitle": "Wählen Sie das Bild für die Vorschau aus",
+    "imageSelect": "Bild",
+    "preview": "Vorschau",
+    "processStart": "Start",
+    "processStop": "Beenden",
+
+    "unProcess": "Ausstehende Verarbeitung",
+    "processIng": "Verarbeitung",
+    "processSuccess": "Erfolg",
+    "processFail": "fehlschlagen",
+    "processOver": "Verarbeitung abgeschlossen",
+
+    "checkPositionTip": "Bitte geben Sie die Koordinaten des Textwasserzeichens ein",
+    "checkPositionTip2": "Fehler bei der Eingabe von Textwasserzeichen-Koordinaten",
+    "watermarkTip1": "Bitte wählen Sie ein Wasserzeichenbild",
+    "watermarkTip2": "Bitte geben Sie Wasserzeichentext ein",
+    "customResolutionTip": "Eingabefehler bei benutzerdefinierter Auflösung",
+    "previewLoadingTip": "Bitte warten Sie, wir generieren Vorschaubilder",
+    "settingDataValiErrTip": "Die Wasserzeicheneinstellungsdaten sind unvollständig, überprüfen Sie bitte"
+  }
+}

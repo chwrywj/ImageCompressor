@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "數字世界：圖片處理助手",
+
+    "imageCompress": "圖片壓縮",
+    "imageFormatConversion": "圖片格式轉換",
+    "imageAddWatermark": "添加浮水印",
+    "language": "語言",
+    "support": "技術支援",
+    "donata": "捐贈",
+
+    "addFileTip": "支持格式：",
+    "addImageBtn": "添加圖片",
+    "addDirBtn": "添加資料夾",
+    "addDirTip": "會找出選中的資料夾及子資料夾裡面的所有圖片檔案",
+    "clearFile": "清空",
+
+    "sourcePath": "原路徑",
+    "sourceSize": "原大小",
+    "sourceResolution": "原分辯率",
+    "newPath": "新路徑",
+    "newSize": "新大小",
+    "newResolution": "新分辯率",
+    "status": "狀態",
+
+    "taskThreadsNumber": "任務線程數",
+    "taskThreadsNumberTip": "任務線程數越大消耗CUP和記憶體越多，普通電腦建議選擇1-3",
+    "imageResolution": "圖片分辯率",
+    "useSourceResolution": "使用源分辯率",
+    "customMaxResolution": "自定義最大分辯率",
+    "proportionResolution": "按比例",
+    "proportionForResolution": "分辯率比例",
+    "width": "寬度",
+    "height": "高度",
+    "maxWidth": "最大寬度",
+    "maxHeight": "最大高度",
+    "customResolutionTip1": "不設定時會使用源分辯率。",
+    "customResolutionTip2": "若只設定了寬度或者高度，另外一個值會根據圖片分辯率等比值自動計算。",
+    "customResolutionTip3": "若圖片原有寬高小於設定的寬高時將會使用圖片原有分辯率。",
+    "customResolutionTip4": "若圖片原有寬高大於設定的寬高會等比縮小圖片。",
+    "customResolutionRequired": "請輸入圖片分辯率",
+    "mustBeInt": "必須是整數",
+    "outDir": "圖片輸出目錄",
+    "selectOutputDirTip": "請選擇輸出目錄",
+    "inputTip": "請輸入",
+    "selectTip": "請選擇",
+
+    "tip": "提示",
+    "ok": "確定",
+    "cancel": "取消",
+    "systemError": "程式出現錯誤"
+  },
+
+  "imageCompress": {
+    "tip": "批量壓縮圖片",
+
+    "compressSetting": "壓縮設定",
+    "quality": "圖片質量",
+    "qualityTip": "值越大圖片質量越好，但壓縮率會越小",
+
+    "compressStart": "開始壓縮",
+    "compressStop": "停止壓縮",
+
+    "unCompress": "待壓縮",
+    "compressIng": "壓縮中",
+    "compressSuccess": "成功",
+    "compressFail": "失敗",
+    "compressOver": "壓縮完成"
+  },
+
+  "imageFormatConvert": {
+    "tip": "批量轉換圖片格式",
+
+    "sourceFormat": "原格式",
+    "newFormat": "目標格式",
+
+    "convertSetting": "轉換設定",
+    "batchSetNewFormat": "批量設定目標格式",
+    "convertStart": "開始轉換",
+    "convertStop": "停止轉換",
+    "newFormatNoSettingTip": "請給所有圖片設定目標格式",
+
+    "unConvert": "待轉換",
+    "convertIng": "轉換中",
+    "convertSuccess": "成功",
+    "convertFail": "失敗",
+    "convertOver": "轉換完成"
+  },
+
+  "imageAddWatermark": {
+    "tip": "批量設定圖片浮水印",
+
+    "processSetting": "浮水印設定",
+    "watermarkType": "浮水印類型",
+    "image": "圖片",
+    "text": "文字",
+    "imagePath": "圖片路徑",
+    "imagePathTip": "請選擇浮水印圖片",
+    "position": "位置",
+    "positionCustom": "自定義",
+    "positionLt": "左上角",
+    "positionMt": "中上部",
+    "positionRt": "右上角",
+    "positionLm": "左中部",
+    "positionM": "中間",
+    "positionRm": "右中部",
+    "positionLb": "左下角",
+    "positionMb": "中下部",
+    "positionRb": "右下角",
+    "customPosition": "自定義位置座標",
+    "positionX": "x軸座標",
+    "positionY": "y軸座標",
+    "textTip": "請輸入文字",
+    "fontSize": "字體大小",
+    "fontColor": "字體顏色",
+    "fontBgColor": "字體背景色",
+    "positionXy": "位置座標",
+    "opacity": "不透明度",
+    "opacityTip": "值越大透明度越低",
+    "previewWatermark": "預覽浮水印",
+    "previewDialogTitle": "選擇要預覽的圖片",
+    "imageSelect": "圖片",
+    "preview": "預覽",
+    "processStart": "開始",
+    "processStop": "停止",
+
+    "unProcess": "待處理",
+    "processIng": "處理中",
+    "processSuccess": "成功",
+    "processFail": "失敗",
+    "processOver": "處理完成",
+
+    "checkPositionTip": "請輸入文字浮水印座標",
+    "checkPositionTip2": "文字浮水印座標輸入錯誤",
+    "watermarkTip1": "請選擇浮水印圖片",
+    "watermarkTip2": "請輸入浮水印文字",
+    "customResolutionTip": "自定義分辯率輸入錯誤",
+    "previewLoadingTip": "請稍後，正在生成預覽圖片",
+    "settingDataValiErrTip": "浮水印設定數據不完整，請檢查"
+  }
+}

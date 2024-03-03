@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Digitális világ: képfeldolgozó asszisztens",
+
+    "imageCompress": "Képtömörítés",
+    "imageFormatConversion": "Képformátum konvertálása",
+    "imageAddWatermark": "Vízjel hozzáadása",
+    "language": "nyelv",
+    "support": "technikai támogatás",
+    "donata": "adományozás",
+
+    "addFileTip": "Támogatott formátumok:",
+    "addImageBtn": "Kép hozzáadása",
+    "addDirBtn": "mappák hozzáadása",
+    "addDirTip": "Megtalálja az összes képfájlt a kiválasztott mappában és almappában",
+    "clearFile": "üres",
+
+    "sourcePath": "Eredeti útvonal",
+    "sourceSize": "Eredeti méret",
+    "sourceResolution": "Eredeti felbontás",
+    "newPath": "Új útvonal",
+    "newSize": "Új méret",
+    "newResolution": "Új felbontás",
+    "status": "állapot",
+
+    "taskThreadsNumber": "A feladatszálak száma",
+    "taskThreadsNumberTip": "Minél nagyobb a feladatszálak száma, annál több CUP és memória fogyaszt el.",
+    "imageResolution": "Képfelbontás",
+    "useSourceResolution": "A forrás felbontása",
+    "customMaxResolution": "Egyéni maximális felbontás",
+    "proportionResolution": "Arányos",
+    "proportionForResolution": "Felbontási arány",
+    "width": "szélesség",
+    "height": "magasság",
+    "maxWidth": "Maximális szélesség",
+    "maxHeight": "Maximális magasság",
+    "customResolutionTip1": "Ha nincs beállítva, a forrás felbontását használjuk.",
+    "customResolutionTip2": "Ha csak a szélesség vagy a magasság van beállítva, a másik érték automatikusan kiszámításra kerül a képfelbontás és más tényezők aránya alapján.",
+    "customResolutionTip3": "Ha a kép eredeti szélessége és magassága kisebb, mint a beállított szélesség és magasság, a kép eredeti felbontását használjuk.",
+    "customResolutionTip4": "Ha a kép eredeti szélessége és magassága nagyobb, mint a beállított szélesség és magasság, a kép arányosan csökken.",
+    "customResolutionRequired": "Adja meg a kép felbontását",
+    "mustBeInt": "Egész számnak kell lennie.",
+    "outDir": "Kép kimeneti könyvtára",
+    "selectOutputDirTip": "Válassza ki a kimeneti könyvtárat",
+    "inputTip": "Kérem, írja be",
+    "selectTip": "Válassza ki",
+
+    "tip": "prompt",
+    "ok": "megerősítés",
+    "cancel": "törlés",
+    "systemError": "Programhiba"
+  },
+
+  "imageCompress": {
+    "tip": "Tétel tömörítése",
+
+    "compressSetting": "Tömörítési beállítások",
+    "quality": "Képminőség",
+    "qualityTip": "Minél magasabb az érték, annál jobb a képminőség, de annál alacsonyabb a tömörítési arány",
+
+    "compressStart": "Tömörítés megkezdése",
+    "compressStop": "Tömörítés leállítása",
+
+    "unCompress": "Tömörítendő",
+    "compressIng": "Tömörítésben",
+    "compressSuccess": "siker",
+    "compressFail": "sikertelen",
+    "compressOver": "Tömörítés befejezve"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Köteg konvertálása képformátum",
+
+    "sourceFormat": "Eredeti formátum",
+    "newFormat": "Célformátum",
+
+    "convertSetting": "Konverziós beállítások",
+    "batchSetNewFormat": "Tételkészlet célformátum",
+    "convertStart": "Átalakítás indítása",
+    "convertStop": "Átalakítás leállítása",
+    "newFormatNoSettingTip": "Kérjük, állítsa be az összes kép célformátumát",
+
+    "unConvert": "Átalakítandó",
+    "convertIng": "Átalakítás",
+    "convertSuccess": "siker",
+    "convertFail": "sikertelen",
+    "convertOver": "átalakítás befejezése"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Tételben beállított kép vízjelek",
+
+    "processSetting": "Vízjelbeállítások",
+    "watermarkType": "Vízjel típusa",
+    "image": "kép",
+    "text": "karakterek",
+    "imagePath": "A kép elérési útja",
+    "imagePathTip": "Válasszon ki egy vízjelképet",
+    "position": "pozíció",
+    "positionCustom": "egyéni",
+    "positionLt": "Bal felső sarok",
+    "positionMt": "Középső felső rész",
+    "positionRt": "Jobb felső sarok",
+    "positionLm": "Bal középső",
+    "positionM": "középső",
+    "positionRm": "Középső jobbra",
+    "positionLb": "Bal alsó sarok",
+    "positionMb": "Középső és alsó részek",
+    "positionRb": "Jobb alsó sarok",
+    "customPosition": "Egyéni pozíciókoordináták",
+    "positionX": "x koordináta",
+    "positionY": "Y tengely koordinátái",
+    "textTip": "Adja meg a szöveget",
+    "fontSize": "betűméret",
+    "fontColor": "Betűszín",
+    "fontBgColor": "Betűtípus háttérszín",
+    "positionXy": "Pozíciókoordináták",
+    "opacity": "Opacitás",
+    "opacityTip": "Minél magasabb az érték, annál alacsonyabb az átláthatóság",
+    "previewWatermark": "Előnézeti vízjel",
+    "previewDialogTitle": "Az előnézeti kép kijelölése",
+    "imageSelect": "kép",
+    "preview": "előnézet",
+    "processStart": "indítás",
+    "processStop": "megszüntetni",
+
+    "unProcess": "Függőben lévő feldolgozás",
+    "processIng": "Feldolgozás",
+    "processSuccess": "siker",
+    "processFail": "sikertelen",
+    "processOver": "A feldolgozás befejeződött",
+
+    "checkPositionTip": "Kérjük, adja meg a szöveg vízjel koordinátáit",
+    "checkPositionTip2": "Szöveg vízjel koordináta beviteli hiba",
+    "watermarkTip1": "Válasszon ki egy vízjelképet",
+    "watermarkTip2": "Adja meg a vízjel szövegét",
+    "customResolutionTip": "Egyéni felbontású beviteli hiba",
+    "previewLoadingTip": "Kérem várjon, előnézeti képeket generálunk",
+    "settingDataValiErrTip": "A vízjel beállítási adatok hiányosak, kérjük ellenőrizze"
+  }
+}

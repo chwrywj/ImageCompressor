@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "Digitaalinen maailma: Image Processing Assistant",
+
+    "imageCompress": "Kuvan pakkaaminen",
+    "imageFormatConversion": "Kuvamuodon muuntaminen",
+    "imageAddWatermark": "Lisää vesileima",
+    "language": "kieli",
+    "support": "tekninen tuki",
+    "donata": "lahjoitus",
+
+    "addFileTip": "Tuetut muodot:",
+    "addImageBtn": "Lisää kuva",
+    "addDirBtn": "Lisää kansioita",
+    "addDirTip": "Löytää kaikki kuvatiedostot valitusta kansiosta ja alikansioista",
+    "clearFile": "tyhjä",
+
+    "sourcePath": "Alkuperäinen polku",
+    "sourceSize": "Alkuperäinen koko",
+    "sourceResolution": "Alkuperäinen resoluutio",
+    "newPath": "Uusi polku",
+    "newSize": "Uusi koko",
+    "newResolution": "Uusi päätöslauselma",
+    "status": "tila",
+
+    "taskThreadsNumber": "Tehtäväketjujen lukumäärä",
+    "taskThreadsNumberTip": "Mitä suurempi tehtäväketjujen määrä on, sitä enemmän CUP ja muisti kuluvat.",
+    "imageResolution": "Kuvan tarkkuus",
+    "useSourceResolution": "Käytä lähderesoluutiota",
+    "customMaxResolution": "Mukautettu enimmäisresoluutio",
+    "proportionResolution": "Suhteellinen",
+    "proportionForResolution": "Resoluutiosuhde",
+    "width": "leveys",
+    "height": "korkeus",
+    "maxWidth": "Suurin leveys",
+    "maxHeight": "Suurin korkeus",
+    "customResolutionTip1": "Jos sitä ei ole määritetty, käytetään lähteen resoluutiota.",
+    "customResolutionTip2": "Jos vain leveys tai korkeus on asetettu, toinen arvo lasketaan automaattisesti kuvan tarkkuuden ja muiden tekijöiden perusteella.",
+    "customResolutionTip3": "Jos kuvan alkuperäinen leveys ja korkeus ovat pienempiä kuin asetettu leveys ja korkeus, käytetään kuvan alkuperäistä resoluutiota.",
+    "customResolutionTip4": "Jos kuvan alkuperäinen leveys ja korkeus ovat suuremmat kuin asetettu leveys ja korkeus, kuvaa pienennetään suhteellisesti.",
+    "customResolutionRequired": "Anna kuvan resoluutio",
+    "mustBeInt": "Täytyy olla kokonaisluku",
+    "outDir": "Kuvan lähtöhakemisto",
+    "selectOutputDirTip": "Valitse lähtöhakemisto",
+    "inputTip": "Ole hyvä ja syötä",
+    "selectTip": "Valitse",
+
+    "tip": "kehotte",
+    "ok": "Vahvista",
+    "cancel": "peruuta",
+    "systemError": "Ohjelmavirhe"
+  },
+
+  "imageCompress": {
+    "tip": "Pakkaa kuvat erässä",
+
+    "compressSetting": "Pakkausasetukset",
+    "quality": "Kuvanlaatu",
+    "qualityTip": "Mitä suurempi arvo on, sitä parempi kuvanlaatu, mutta sitä pienempi pakkaussuhde on",
+
+    "compressStart": "Aloita pakkaaminen",
+    "compressStop": "Lopeta pakkaaminen",
+
+    "unCompress": "Pakkattava",
+    "compressIng": "Pakkauksessa",
+    "compressSuccess": "menestys",
+    "compressFail": "epäonnistuu",
+    "compressOver": "Puristus suoritettu"
+  },
+
+  "imageFormatConvert": {
+    "tip": "Erämuunna kuvan muoto",
+
+    "sourceFormat": "Alkuperäinen muoto",
+    "newFormat": "Kohdenmuoto",
+
+    "convertSetting": "Muuntoasetukset",
+    "batchSetNewFormat": "Erä Aseta kohdemuoto",
+    "convertStart": "Aloita muuntaminen",
+    "convertStop": "Pysäytä muuntaminen",
+    "newFormatNoSettingTip": "Aseta kaikkien kuvien kohdemuoto",
+
+    "unConvert": "Muunnettava",
+    "convertIng": "Muuntaminen",
+    "convertSuccess": "menestys",
+    "convertFail": "epäonnistuu",
+    "convertOver": "muuntamisen loppuun saattaminen"
+  },
+
+  "imageAddWatermark": {
+    "tip": "Eräasettelukuvavesileimat",
+
+    "processSetting": "Vesimerkkiasetukset",
+    "watermarkType": "Vesimerkin tyyppi",
+    "image": "kuva",
+    "text": "merkit",
+    "imagePath": "Kuvapolku",
+    "imagePathTip": "Valitse vesileimakuva",
+    "position": "sijainti",
+    "positionCustom": "custom",
+    "positionLt": "Vasen yläkulma",
+    "positionMt": "Keskimmäinen yläosa",
+    "positionRt": "Oikea yläkulma",
+    "positionLm": "Vasen keskiosa",
+    "positionM": "keskimmäinen",
+    "positionRm": "Keskioikealla",
+    "positionLb": "Vasen alakulma",
+    "positionMb": "Keskiosat ja alaosat",
+    "positionRb": "Oikea alakulma",
+    "customPosition": "Mukautetut sijaintikoordinaatit",
+    "positionX": "x- koordinaatti",
+    "positionY": "Y-akselin koordinaatit",
+    "textTip": "Anna teksti",
+    "fontSize": "kirjasinkoko",
+    "fontColor": "Kirjaimen väri",
+    "fontBgColor": "Kirjaimen taustaväri",
+    "positionXy": "Sijaintikoordinaatit",
+    "opacity": "Läpinäkyvyys",
+    "opacityTip": "Mitä suurempi arvo on, sitä pienempi läpinäkyvyys on",
+    "previewWatermark": "Esikatsele vesileimaa",
+    "previewDialogTitle": "Valitse esikatseltava kuva",
+    "imageSelect": "kuva",
+    "preview": "esikatselu",
+    "processStart": "start",
+    "processStop": "lopeta",
+
+    "unProcess": "Käsittely odottaa",
+    "processIng": "Jalostus",
+    "processSuccess": "menestys",
+    "processFail": "epäonnistuu",
+    "processOver": "Käsittely suoritettu",
+
+    "checkPositionTip": "Anna vesileiman koordinaatit",
+    "checkPositionTip2": "Tekstin vesileiman koordinaattien syöttövirhe",
+    "watermarkTip1": "Valitse vesileimakuva",
+    "watermarkTip2": "Anna vesileiman teksti",
+    "customResolutionTip": "Mukautetun resoluution syöttövirhe",
+    "previewLoadingTip": "Odota, luotamme esikatselukuvia.",
+    "settingDataValiErrTip": "Vesimerkin asetustiedot ovat puutteelliset, tarkista"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "common": {
+    "title": "数字世界: 图片处理助手",
+
+    "imageCompress": "图片压缩",
+    "imageFormatConversion": "图片格式转换",
+    "imageAddWatermark": "添加水印",
+    "language": "语言",
+    "support": "技术支持",
+    "donata": "捐赠",
+
+    "addFileTip": "支持格式：",
+    "addImageBtn": "添加图片",
+    "addDirBtn": "添加文件夹",
+    "addDirTip": "会找出选中的文件夹及子文件夹里面的所有图片文件",
+    "clearFile": "清空",
+
+    "sourcePath": "原路径",
+    "sourceSize": "原大小",
+    "sourceResolution": "原分辨率",
+    "newPath": "新路径",
+    "newSize": "新大小",
+    "newResolution": "新分辨率",
+    "status": "状态",
+
+    "taskThreadsNumber": "任务线程数",
+    "taskThreadsNumberTip": "任务线程数越大消耗CUP和内存越多，普通电脑建议选择1-3",
+    "imageResolution": "图片分辨率",
+    "useSourceResolution": "使用源分辨率",
+    "customMaxResolution": "自定义最大分辨率",
+    "proportionResolution": "按比例",
+    "proportionForResolution": "分辨率比例",
+    "width": "宽度",
+    "height": "高度",
+    "maxWidth": "最大宽度",
+    "maxHeight": "最大高度",
+    "customResolutionTip1": "不设置时会使用源分辨率。",
+    "customResolutionTip2": "若只设置了宽度或者高度，另外一个值会根据图片分辨率等比值自动计算。",
+    "customResolutionTip3": "若图片原有宽高小于设置的宽高时将会使用图片原有分辨率。",
+    "customResolutionTip4": "若图片原有宽高大于设置的宽高会等比缩小图片。",
+    "customResolutionRequired": "请输入图片分辨率",
+    "mustBeInt": "必须是整数",
+    "outDir": "图片输出目录",
+    "selectOutputDirTip": "请选择输出目录",
+    "inputTip": "请输入",
+    "selectTip": "请选择",
+
+    "tip": "提示",
+    "ok": "确定",
+    "cancel": "取消",
+    "systemError": "程序出现错误"
+  },
+
+  "imageCompress": {
+    "tip": "批量压缩图片",
+
+    "compressSetting": "压缩设置",
+    "quality": "图片质量",
+    "qualityTip": "值越大图片质量越好，但压缩率会越小",
+
+    "compressStart": "开始压缩",
+    "compressStop": "停止压缩",
+
+    "unCompress": "待压缩",
+    "compressIng": "压缩中",
+    "compressSuccess": "成功",
+    "compressFail": "失败",
+    "compressOver": "压缩完成"
+  },
+
+  "imageFormatConvert": {
+    "tip": "批量转换图片格式",
+
+    "sourceFormat": "原格式",
+    "newFormat": "目标格式",
+
+    "convertSetting": "转换设置",
+    "batchSetNewFormat": "批量设置目标格式",
+    "convertStart": "开始转换",
+    "convertStop": "停止转换",
+    "newFormatNoSettingTip": "请给所有图片设置目标格式",
+
+    "unConvert": "待转换",
+    "convertIng": "转换中",
+    "convertSuccess": "成功",
+    "convertFail": "失败",
+    "convertOver": "转换完成"
+  },
+
+  "imageAddWatermark": {
+    "tip": "批量设置图片水印",
+
+    "processSetting": "水印设置",
+    "watermarkType": "水印类型",
+    "image": "图片",
+    "text": "文字",
+    "imagePath": "图片路径",
+    "imagePathTip": "请选择水印图片",
+    "position": "位置",
+    "positionCustom": "自定义",
+    "positionLt": "左上角",
+    "positionMt": "中上部",
+    "positionRt": "右上角",
+    "positionLm": "左中部",
+    "positionM": "中间",
+    "positionRm": "右中部",
+    "positionLb": "左下角",
+    "positionMb": "中下部",
+    "positionRb": "右下角",
+    "customPosition": "自定义位置坐标",
+    "positionX": "x轴坐标",
+    "positionY": "y轴坐标",
+    "textTip": "请输入文字",
+    "fontSize": "字体大小",
+    "fontColor": "字体颜色",
+    "fontBgColor": "字体背景色",
+    "positionXy": "位置坐标",
+    "opacity": "不透明度",
+    "opacityTip": "值越大透明度越低",
+    "previewWatermark": "预览水印",
+    "previewDialogTitle": "选择要预览的图片",
+    "imageSelect": "图片",
+    "preview": "预览",
+    "processStart": "开始",
+    "processStop": "停止",
+
+    "unProcess": "待处理",
+    "processIng": "处理中",
+    "processSuccess": "成功",
+    "processFail": "失败",
+    "processOver": "处理完成",
+
+    "checkPositionTip": "请输入文字水印坐标",
+    "checkPositionTip2": "文字水印坐标输入错误",
+    "watermarkTip1": "请选择水印图片",
+    "watermarkTip2": "请输入水印文字",
+    "customResolutionTip": "自定义分辨率输入错误",
+    "previewLoadingTip": "请稍后，正在生成预览图片",
+    "settingDataValiErrTip": "水印设置数据不完整，请检查"
+  }
+}
