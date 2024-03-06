@@ -13,5 +13,20 @@ https://github.com/chwrywj/ImageCompress/releases
 ![](https://github.com/chwrywj/ImageCompress/blob/main/image-compress-1.png)
 ![](https://github.com/chwrywj/ImageCompress/blob/main/image-compress-2.png)
 
+# Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run electron:serve
+```
+
+### Compiles and minifies for production
+```
+npm run electron:build
+```
+
 # Related
-[imagemin](https://github.com/imagemin/imagemin)
+[sharp](https://github.com/lovell/sharp)
