@@ -9,7 +9,7 @@ module.exports = defineConfig({
       webSecurity: false,
       builderOptions: {
         productName: `Image compress`,
-        appId: 'com.world0101.imagecompress',
+        appId: 'net.toollist.imagecompressor',
         asar: true,
         linux: {
           target: ['deb'],
